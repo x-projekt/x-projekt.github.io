@@ -1,0 +1,31 @@
+#header-background {
+	background-color: #424242;
+	height: 10rem;
+	width: 100%;
+}
+
+#header-row {
+	height: 10rem;
+}
+
+.quote-border {
+	/* border-color: white; */
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 2px;
+	background-color: rgba(224, 224, 224, 0.1)
+}
+
+/* Code Icon Formatting */
+/* .d-inline-block#code-icon{
+	height: 3rem;
+} */
+
+/* Google Material Icons Formatting */
+.material-icons.md-60{
+	font-size: 60px;
+}
+
+.material-icons.fill-b{
+	color: #2196F3;
+}
