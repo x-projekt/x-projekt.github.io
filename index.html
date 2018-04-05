@@ -6,9 +6,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<meta name="author" content="Harsha Vardhan">
 
-		<!-- CSS Stylesheets -->
+		<!-- Third-party CSS Stylesheets -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+		<!-- Custom CSS Stylesheets -->
 		<link rel="stylesheet" href="./res/css/index.css">
 	</head>
 	<body>
@@ -16,13 +19,8 @@
 			<div class="container">
 				<div class="row justify-content-center" id="header-row">
 					<div class="col-lg-5">
-						<div class="d-flex flex-row align-items-end">
-							<div class="d-inline-block" id="code-icon">
-								<span class="d-block material-icons md-60 fill-b">code</span>
-							</div>
-							<span class="display-4 text-white">Opensource</span>
-						</div>
-						
+						<span class="material-icons" id="header-icon">code</span>
+						<span class="display-4 text-white">Opensource</span>
 					</div>
 					<div class="col-lg-5 offset-lg-2 align-self-lg-end">
 						<blockquote class="blockquote">
@@ -33,8 +31,32 @@
 						</blockquote>
 					</div>
 				</div>
-				<div class="row">
-					<!-- TODO: add code for projects -->
+				<!-- TODO: add projects title and horizontal bar -->
+				<div class="row justify-content-center" id="card-object">
+					<div class="col-auto col-md-3 col-lg-2 align-self-center">
+						<object type="image/svg+xml" data="./res/img/svg/cube.svg" id="card-image">
+							<img src="./res/img/fallback-image.png" height="200" width="200">
+						</object>
+					</div>
+					<div class="col-md-9 col-lg-10">
+						<span id="card-title">Dual Raspberry Pi Stereo Vision</span>
+						<p class="lead">
+							The project aims at performing 3D Stereo-mapping using Raspberry Pi(s) as compute unit 
+							and Pi Cameras for imaging. Images are processed using OpenCV's built-in functions.
+						</p>
+						<!-- TODO: remove underline from hyperlink hover -->
+						<div class="d-flex flex-row-reverse p-2">
+							<!-- TODO: add language hashtags -->
+							<a class="d-inline-block p-2" href="#">
+								<span class="material-icons card-icon">file_download</span>
+								Download
+							</a>
+							<a class="d-inline-block p-2" href="#">
+								<span class="material-icons card-icon">launch</span>
+								Visit Github
+							</a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
