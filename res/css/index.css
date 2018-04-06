@@ -1,3 +1,7 @@
+body {
+	min-width: 400px !important;
+}
+
 #header-background {
 	background-color: #424242;
 	height: 10rem;
@@ -16,32 +20,55 @@
 	background-color: rgba(224, 224, 224, 0.1)
 }
 
-#card-object{
-	-webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1);
-	-moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1);
-	box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1);
-	margin-top: 2.5rem;
+/* Filter-section Formatting */
+#filter-row {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
 }
 
-#card-image{
+#repo-heading-title {
+	font-family: 'Roboto', sans-serif;
+	font-size: 2rem;
+}
+
+/* Card Formatting */
+.card-object{
+	/* -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1); */
+	/* -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1); */
+	box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.1);	
+	margin-top: 2.5rem;
+	border-radius: 3px;
+}
+
+div.card-object:hover{
+	box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 3px 3px 40px rgba(0, 0, 0, 0.1);	
+}
+
+.card-image{
 	height: 150px;
 	width: 150px;
 	display: block;
 	margin: auto;
 }
 
-#card-title {
+.card-heading {
 	font-family: 'Roboto', sans-serif;
 	font-size: 2.5rem;
 	font-weight: 300;
 }
 
-/* Google Material Icons Formatting */
-.material-icons.card-icon{
+.card-icon{
 	font-size: 1rem;
 	vertical-align: middle;
 }
 
+a.card-link:hover {
+	text-decoration: none;
+	background-color: #FAFAFA;
+	border-radius: 3px;
+}
+
+/* Google Material Icons Formatting */
 .material-icons#header-icon{
 	color: #2196F3;
 	font-size: 60px;
