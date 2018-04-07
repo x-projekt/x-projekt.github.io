@@ -76,7 +76,7 @@ a.card-link:hover {
 }
 
 /* Footer Section */
-footer {
+.page-footer {
 	position: relative;
 	left: 0;
 	bottom: 0;
