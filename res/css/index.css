@@ -1,10 +1,4 @@
 /* Header Formatting */
-.material-icons#header-icon{
-	color: #2196F3;
-	font-size: 60px;
-	vertical-align: bottom;	
-}
-
 #header-background {
 	background-color: #424242;
 	height: 10rem;
