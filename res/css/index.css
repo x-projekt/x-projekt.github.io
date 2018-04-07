@@ -19,14 +19,6 @@ body {
 	height: 10rem;
 }
 
-.quote-border {
-	/* border-color: white; */
-	border-width: 1px;
-	border-style: solid;
-	border-radius: 2px;
-	background-color: rgba(224, 224, 224, 0.1)
-}
-
 /* Filter-section Formatting */
 #filter-row {
 	margin-top: 2rem;
@@ -76,7 +68,7 @@ a.card-link:hover {
 }
 
 /* Footer Section */
-.page-footer {
+#page-footer {
 	position: relative;
 	left: 0;
 	bottom: 0;
