@@ -2,6 +2,13 @@ body {
 	min-width: 400px !important;
 }
 
+/* Header Formatting */
+.material-icons#header-icon{
+	color: #2196F3;
+	font-size: 60px;
+	vertical-align: bottom;	
+}
+
 #header-background {
 	background-color: #424242;
 	height: 10rem;
@@ -68,9 +75,38 @@ a.card-link:hover {
 	border-radius: 3px;
 }
 
-/* Google Material Icons Formatting */
-.material-icons#header-icon{
-	color: #2196F3;
-	font-size: 60px;
-	vertical-align: bottom;	
+/* Footer Section */
+footer {
+	position: relative;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	height: 4rem;
+	width: 100%;
+	
+	background-color: #424242;
+	margin-top: 3rem;
+}
+
+.material-icons#footer-icon{
+	color: #9E9E9E;
+	font-size: 48px;
+	vertical-align: bottom;
+}
+
+#footer-title {
+	color: #9E9E9E;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.7rem;
+}
+
+.footer-link {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.3rem;
+	color: #9E9E9E;
+}
+
+.footer-link:hover {
+	text-decoration: none;
+	color: #BDBDBD;
 }
