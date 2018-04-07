@@ -1,20 +1,5 @@
-/* Header Formatting */
-#header-background {
-	background-color: #424242;
-	height: 10rem;
-	width: 100%;
-	margin-top: 4rem;
-}
-
-#header-row {
-	height: 10rem;
-}
-
-#header-title {
-	color: #03A9F4;
-}
-
-#header-link {
+/* Quote Fromatting */
+#quote-link {
 	color: #FF9800;
 }
 
