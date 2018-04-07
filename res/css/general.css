@@ -1,3 +1,41 @@
 body {
 	min-width: 400px !important;
 }
+
+/* Navbar Section */
+#page-navbar {
+	height: 4rem;
+	width: 100%;
+	box-shadow:0 0px 4px rgba(0, 0, 0, 0.3), 0px 3px 40px rgba(0, 0, 0, 0.1);	
+	background-color: #ffffff;
+}
+
+#navbar-row {
+	height: 4rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+.material-icons#navbar-icon{
+	color: #424242;
+	font-size: 48px;
+	vertical-align: bottom;
+}
+
+#navbar-title {
+	color: #424242;
+	font-family: 'Roboto', sans-serif;
+	font-size: 2rem;
+}
+
+.navbar-link {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.3rem;
+	color: #616161;
+	padding: 0.1rem;
+}
+
+.navbar-link:hover {
+	text-decoration: none;
+	color: #9E9E9E;
+}
