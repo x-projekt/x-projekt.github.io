@@ -18,6 +18,14 @@ body {
 	color: #03A9F4;
 }
 
+.header-row.title-only {
+	height: 7rem;
+}
+
+.header-background.title-only {
+	height: 7rem;
+}
+
 /* Navbar Section */
 #page-navbar {
 	height: 4rem;
