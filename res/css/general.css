@@ -8,6 +8,12 @@ body {
 	width: 100%;
 	box-shadow:0 0px 4px rgba(0, 0, 0, 0.3), 0px 3px 40px rgba(0, 0, 0, 0.1);	
 	background-color: #ffffff;
+	
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	z-index: 1;
 }
 
 #navbar-row {
@@ -17,7 +23,7 @@ body {
 }
 
 .material-icons#navbar-icon{
-	color: #424242;
+	color: #4CAF50;
 	font-size: 48px;
 	vertical-align: bottom;
 }
@@ -29,13 +35,22 @@ body {
 }
 
 .navbar-link {
-	font-family: 'Roboto', sans-serif;
 	font-size: 1.3rem;
-	color: #616161;
 	padding: 0.1rem;
 }
 
-.navbar-link:hover {
+/* Link Formatting */
+.simple-link {
+	font-family: 'Roboto', sans-serif;
+	color: #424242;
+}
+
+.simple-link:hover {
 	text-decoration: none;
-	color: #9E9E9E;
+	color: #03A9F4;
+}
+
+.hashtags {
+	color: #039BE5;
+	background-color: #E1F5FE;
 }

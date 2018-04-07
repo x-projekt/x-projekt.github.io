@@ -17,35 +17,35 @@
 
 	</head>
 	<body>
-		<header id="page-navbar">
+		<div id="page-navbar">
 			<div class="row justify-content-between" id="navbar-row">
 				<div class="col-md-7 col-lg-5 align-self-center">
-					<a href="./index.html" class="navbar-link">
+					<a href="./index.html" class="navbar-link simple-link">
 						<span class="material-icons" id="navbar-icon">polymer</span>
 						<span class="p-2" id="navbar-title">harshatech2012</span>
 					</a>
 				</div>
 				<div class="col-md-5 col-lg-4 align-self-center">
 					<div class="d-flex flex-column flex-md-row justify-content-end">
-						<a href="./res/html/credits.html" class="navbar-link p-2">Credits</a>
-						<a href="./res/html/about.html" class="navbar-link p-2">About Me</a>
+						<a href="./res/html/credits.html" class="navbar-link simple-link p-2">Credits</a>
+						<a href="./res/html/about.html" class="navbar-link simple-link p-2">About Me</a>
 					</div>
 				</div>
 			</div>
-		</header>
+		</div>
 
 		<div id="header-background">
 			<div class="container">
 				<!-- Header Section -->
 				<div class="row justify-content-center pb-2" id="header-row">
 					<div class="col-lg-5">
-						<span class="display-3 text-white">Opensource</span>
+						<span class="display-3" id="header-title">Opensource</span>
 					</div>
 					<div class="col-lg-5 offset-lg-2 align-self-lg-end">
 						<blockquote class="blockquote">
 							<p class="lead text-white mb-0">Software is like sex: it's better when it's free</p>
 							<footer class="blockquote-footer">
-								<a href="https://twitter.com/Linus__Torvalds" class="text-white">@Linus_Torvalds</a>
+								<a href="https://twitter.com/Linus__Torvalds" class="simple-link" id="header-link">@Linus_Torvalds</a>
 							</footer>
 						</blockquote>
 					</div>
@@ -80,19 +80,20 @@
 						</p>
 						<hr class="mb-0">
 						<div class="row">
-							<div class="col-lg-7">
+							<div class="col-lg-7 align-self-center">
 								<!-- TODO: convert the li's to links for sorting projects-->
-								<ul class="list-inline">
-									<li class="list-inline-item bg-light text-secondary p-1 mt-2">python</li>
-								</ul>
+								<div class="d-flex-inline flex-row justify-content-start">
+									<span class="hashtags mr-1 p-1">#python</span>
+									<span class="hashtags mr-1 p-1">#java</span>
+								</div>
 							</div>
-							<div class="col-lg-5">
+							<div class="col-lg-5 align-self-center">
 								<div class="d-flex flex-row-reverse p-2">
-									<a class="p-2 card-link" href="https://github.com/harshatech2012/dual-raspi-stereo-vision/archive/master.zip">
+									<a class="p-2 card-link simple-link" href="https://github.com/harshatech2012/dual-raspi-stereo-vision/archive/master.zip">
 										<span class="material-icons card-icon">file_download</span>
 										Download
 									</a>
-									<a class="p-2 card-link" href="https://harshatech2012.github.io/dual-raspi-stereo-vision/" target="_blank">
+									<a class="p-2 card-link simple-link" href="https://harshatech2012.github.io/dual-raspi-stereo-vision/" target="_blank">
 										<span class="material-icons card-icon">launch</span>
 										Visit Github
 									</a>
