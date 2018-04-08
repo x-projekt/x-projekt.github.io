@@ -27,7 +27,7 @@ body {
 }
 
 /* Navbar Section */
-#page-navbar {
+.page-navbar {
 	height: 4rem;
 	width: 100%;
 	box-shadow:0 0px 4px rgba(0, 0, 0, 0.3), 0px 3px 40px rgba(0, 0, 0, 0.1);	
@@ -40,19 +40,19 @@ body {
 	z-index: 1;
 }
 
-#navbar-row {
+.navbar-row {
 	height: 4rem;
 	padding-left: 2rem;
 	padding-right: 2rem;
 }
 
-.material-icons#navbar-icon{
+.material-icons.navbar-icon{
 	color: #4CAF50;
 	font-size: 48px;
 	vertical-align: bottom;
 }
 
-#navbar-title {
+.navbar-title {
 	color: #424242;
 	font-family: 'Roboto', sans-serif;
 	font-size: 2rem;
