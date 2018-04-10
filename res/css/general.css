@@ -63,19 +63,14 @@ body {
 	color: #03A9F4;
 }
 
-.hashtags {
-	color: #039BE5;
-	background-color: #E1F5FE;
-}
-
 /* Footer Section */
-#footer-logo {
+.footer-logo {
 	font-size: 30px;
 	color: #9E9E9E;
 	vertical-align: bottom;
 }
 
-#footer-title {
+.footer-title {
 	font-family: 'Roboto', sans-serif;
 	color: #9E9E9E;
 }

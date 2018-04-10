@@ -47,3 +47,14 @@ div.card-object:hover{
 	font-size: 1rem;
 	vertical-align: middle;
 }
+
+.hashtags {
+	color: #039BE5;
+	background-color: #E1F5FE;
+}
+
+.hashtags:hover {
+	text-decoration: none;
+	color: #0288D1;
+	background-color: #B3E5FC;
+}
