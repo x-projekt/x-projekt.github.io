@@ -5,17 +5,7 @@ body {
 /* Header Formatting */
 .page-header {
 	background-color: #424242;
-	height: 10rem;
 	width: 100%;
-	/* margin-top: 4rem; */
-}
-
-.header-row {
-	height: 10rem;
-}
-
-.header-title {
-	color: #03A9F4;
 }
 
 .header-row.title-only {
@@ -33,7 +23,7 @@ body {
 }
 
 .navbar-collapse-icon {
-	font-size: 36px;
+	font-size: 30px;
 	vertical-align: bottom;
 }
 
@@ -58,7 +48,7 @@ body {
 	padding: 0.1rem;
 }
 
-.navbar-link.selected {
+.navbar-link.selected, .header-title {
 	color: #03A9F4;
 }
 
