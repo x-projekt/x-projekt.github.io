@@ -18,20 +18,21 @@
 	</head>
 	<body>
 		<!-- Navigation Bar -->
-		<div class="page-navbar">
-			<div class="row justify-content-between navbar-row">
-				<div class="col-md-7 col-lg-5 align-self-center">
-					<a href="./index.html" class="navbar-link simple-link">
-						<span class="material-icons navbar-icon">polymer</span>
-						<span class="p-2 navbar-title">harshatech2012</span>
-					</a>
-				</div>
-				<div class="col-md-5 col-lg-4 align-self-center">
-					<!-- TODO: Fix the collapse of navbar links <= sm condition -->
-					<div class="d-flex flex-column flex-md-row justify-content-end">
-						<a href="./res/views/credits.html" class="navbar-link simple-link p-2">Credits</a>
-						<a href="./res/views/about.html" class="navbar-link simple-link p-2">About Me</a>
-					</div>
+		<div role="navigation" class="navbar navbar-expand-md sticky-top">
+			<!-- TODO: replace # with reload javascript code -->
+			<a class="navbar-brand simple-link" href="#">
+				<span class="material-icons navbar-icon">polymer</span>
+				<span class="p-2 navbar-title">harshatech2012</span>
+			</a>
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapsibleContent" aria-controls="navbarCollapsibleContent" aria-expanded="false" aria-label="Toggle Navigation">
+				<span class="material-icons navbar-collapse-icon">menu</span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarCollapsibleContent">
+				<div class="navbar-nav ml-auto">
+					<a href="./res/views/credits.html" class="nav-item navbar-link simple-link p-2">Credits</a>
+					<a href="./res/views/about.html" class="nav-item navbar-link simple-link p-2">About Me</a>
 				</div>
 			</div>
 		</div>
@@ -84,7 +85,7 @@
 						<div class="row">
 							<div class="col-lg-7 align-self-center">
 								<!-- TODO: convert the li's to links for sorting projects-->
-								<div class="d-flex-inline flex-row justify-content-start">
+								<div class="d-inline-flex flex-row justify-content-start">
 									<span class="hashtags mr-1 p-1">#python</span>
 									<span class="hashtags mr-1 p-1">#java</span>
 								</div>
