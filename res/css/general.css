@@ -3,7 +3,7 @@ body {
 }
 
 /* Header Formatting */
-.header-background {
+.page-header {
 	background-color: #424242;
 	height: 10rem;
 	width: 100%;
