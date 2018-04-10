@@ -27,17 +27,9 @@ body {
 }
 
 /* Navbar Section */
-.page-navbar {
-	height: 4rem;
-	width: 100%;
+.format-navbar {
 	box-shadow:0 0px 4px rgba(0, 0, 0, 0.3), 0px 3px 40px rgba(0, 0, 0, 0.1);	
 	background-color: #ffffff;
-	
-	position: fixed;
-	left: 0;
-	top: 0;
-	right: 0;
-	z-index: 1024;
 }
 
 .navbar-collapse-icon {
@@ -47,12 +39,6 @@ body {
 
 .navbar-collapse-icon:hover {
 	color: #03A9F4;
-}
-
-.navbar-row {
-	height: 4rem;
-	/* padding-left: 2rem;
-	padding-right: 2rem; */
 }
 
 .material-icons.navbar-icon{
