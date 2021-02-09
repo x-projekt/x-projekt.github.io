@@ -1,132 +1,165 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<!-- Meta Data -->
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<meta name="author" content="Harsha Vardhan">
 
-		<!-- Third-party CSS Stylesheets -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-		<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Harsha Vardhan">
 
-		<!-- Custom CSS Stylesheets -->
-		<link rel="stylesheet" href="./res/css/general.css">		
-		<link rel="stylesheet" href="./res/css/index.css">
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
 
-	</head>
-	<body>
-		<!-- Navigation Bar -->
-		<div role="navigation" class="navbar navbar-expand-md sticky-top format-navbar">
-			<a class="navbar-brand simple-link mr-0" href="./index.html">
-				<span class="material-icons navbar-icon">polymer</span>
-				<span class="p-2 navbar-title">harshatech2012</span>
+	<!-- Custom CSS Stylesheets -->
+	<link rel="stylesheet" href="./res/css/general.css">		
+	<link rel="stylesheet" href="./res/css/index.css">
+	
+	<title>Home - Harsha Vardhan</title>
+</head>
+
+<body>
+	<!-- navigation bar -->
+	<nav class="navbar navbar-expand-lg sticky-top justify-content-between align-items-stretch">
+		<div class="logo ms-3">
+			<a href="#">
+				<div class="d-flex align-items-center me-2">
+					<img class="me-2" src="./res/img/coding_avatar_square.jpg" />
+					<span class="title">Harsha Vardhan</span>
+				</div>
 			</a>
-
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapsibleContent" aria-controls="navbarCollapsibleContent" aria-expanded="false" aria-label="Toggle Navigation">
-				<span class="material-icons navbar-collapse-icon">menu</span>
-			</button>
-
-			<div class="collapse navbar-collapse" id="navbarCollapsibleContent">
-				<div class="navbar-nav ml-auto">
-					<a href="./res/views/credits.html" class="nav-item navbar-link simple-link p-2">Credits</a>
-					<a href="./res/views/about.html" class="nav-item navbar-link simple-link p-2">About Me</a>
-				</div>
-			</div>
 		</div>
+		<button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse flex-row-reverse align-items-center me-3" id="navbarSupportedContent">
+			<ul class="navbar-nav">
+				<a href="#">
+					<li class="nav-item selected">About</li>
+				</a>
+				<a aria-current="page" href="#">
+					<li class="nav-item">Projects</li>
+				</a>
+				<a href="#">
+					<li class="nav-item">Publications</li>
+				</a>
+				<a href="#" aria-disabled="true">
+					<li class="nav-item">Essays</li>
+				</a>
+				<a href="#">
+					<li class="nav-item">Contact</li>
+				</a>
+			</ul>
+		</div>
+	</nav>
 
-		<!-- Page Header -->
-		<div class="page-header pb-lg-3">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-5">
-						<span class="display-3 header-title">Opensource</span>
-					</div>
-					<div class="col-lg-5 ml-auto align-self-lg-end">
-						<blockquote class="blockquote mt-3">
-							<p class="lead text-white mb-0">Software is like sex: it's better when it's free</p>
-							<footer class="blockquote-footer">
-								<a href="https://twitter.com/Linus__Torvalds" class="simple-link" id="quote-link">@Linus_Torvalds</a>
-							</footer>
+	<!-- page header -->
+	<div class="header-section mb-3">
+		<div class="container">
+			<div class="row justify-content-between">
+				<div class="col-lg-5">
+					<div class="title">Projects</div>
+				</div>
+				<div class="col-lg-5 align-self-center">
+					<figure class="text-end text-white">
+						<blockquote class="blockquote">
+							<p>“A person often meets his destiny on the road he takes to avoid it.”</p>
 						</blockquote>
-					</div>
+						<figcaption class="blockquote-footer">
+							Jean de La Fontaine, <cite title="Fables">Fables</cite>
+						</figcaption>
+					</figure>
 				</div>
 			</div>
 		</div>
+	</div>
 
-		<!-- Filter Section -->		
-		<div class="container">
-			<div class="row align-items-center" id="filter-row">
-				<div class="col-sm-4">
-					<div class="text-secondary d-inline-block" id="repo-heading-title">Repositories</div>
-				</div>
-				<div class="col-sm-6 col-md-4 ml-auto">
-					<!-- TODO: Make search functional -->
-					<input type="text" class="form-control d-inline-block" placeholder="Search repositories...">
-				</div>
-				<div class="col-12">
-					<hr class="mb-0 mt-1">
-				</div>
+	<!-- content -->		
+	<div class="container mb-3">
+		<!-- <div class="row justify-content-center card-object">
+			<div class="col-auto col-md-3 col-lg-2 align-self-center">
+				<object type="image/svg+xml" data="./res/img/svg/sensor.svg" class="card-image">
+					<img src="./res/img/fallback-image.png" height="200" width="200">
+				</object>
 			</div>
-		</div>
-
-		<!-- Repo Cards -->		
-		<div class="container">
-			<div class="row justify-content-center card-object">
-				<div class="col-auto col-md-3 col-lg-2 align-self-center">
-					<object type="image/svg+xml" data="./res/img/svg/sensor.svg" class="card-image">
-						<img src="./res/img/fallback-image.png" height="200" width="200">
-					</object>
-				</div>
-				<div class="col-md-9 col-lg-10">
-					<span class="card-heading">Dual Raspberry Pi Stereo Vision</span>
-					<p class="lead">
-						The project aims at performing 3D Stereo-mapping using Raspberry Pi(s) as compute unit 
-						and Pi Cameras for imaging. Images are processed using OpenCV's built-in functions.
-					</p>
-					<hr class="mb-lg-0">
-					<div class="row">
-						<div class="col-lg-7 align-self-center">
-							<!-- TODO: convert hashtag links to be searchable -->
-							<div class="d-inline-flex flex-row justify-content-start">
-								<a href="#" class="hashtags mr-1 p-1">#python</a>
-								<a href="#" class="hashtags mr-1 p-1">#java</a>
-							</div>
+			<div class="col-md-9 col-lg-10">
+				<span class="card-heading">Dual Raspberry Pi Stereo Vision</span>
+				<p class="lead">
+					The project aims at performing 3D Stereo-mapping using Raspberry Pi(s) as compute unit 
+					and Pi Cameras for imaging. Images are processed using OpenCV's built-in functions.
+				</p>
+				<hr class="mb-lg-0">
+				<div class="row">
+					<div class="col-lg-7 align-self-center"> -->
+						<!-- <div class="d-inline-flex flex-row justify-content-start">
+							<a href="#" class="hashtags mr-1 p-1">#python</a>
+							<a href="#" class="hashtags mr-1 p-1">#java</a>
 						</div>
-						<div class="col-lg-5 align-self-center">
-							<div class="d-flex flex-row-reverse p-2">
-								<a class="p-2 card-link simple-link" href="https://github.com/harshatech2012/dual-raspi-stereo-vision/archive/master.zip">
-									<span class="material-icons card-icon">file_download</span>
-									Download
-								</a>
-								<a class="p-2 card-link simple-link" href="https://harshatech2012.github.io/dual-raspi-stereo-vision/" target="_blank">
-									<span class="material-icons card-icon">launch</span>
-									Visit Github
-								</a>
-							</div>
+					</div>
+					<div class="col-lg-5 align-self-center">
+						<div class="d-flex flex-row-reverse p-2">
+							<a class="p-2 card-link simple-link" href="https://github.com/harshatech2012/dual-raspi-stereo-vision/archive/master.zip">
+								<span class="material-icons card-icon">file_download</span>
+								Download
+							</a>
+							<a class="p-2 card-link simple-link" href="https://harshatech2012.github.io/dual-raspi-stereo-vision/" target="_blank">
+								<span class="material-icons card-icon">launch</span>
+								Visit Github
+							</a>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
+		
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non egestas nulla. Fusce egestas varius ullamcorper. Aliquam tincidunt varius scelerisque. Quisque mollis non lectus id dapibus. Mauris fringilla, libero eu porttitor auctor, lacus libero accumsan dolor, vel imperdiet sem tellus quis odio. Nunc dignissim luctus odio ac accumsan. Integer et porta lorem. Vestibulum molestie, erat at accumsan cursus, odio erat porttitor libero, vitae mollis diam purus a nisi. Donec dignissim semper facilisis.
 
-		<!-- Footer Section -->		
-		<div class="container">
-			<div class="row justify-content-around my-3">
-				<div class="col-12"><hr></div>
-				<div class="col-auto">
-					<a href="./index.html" class="navbar-link simple-link">
-						<span class="material-icons footer-logo">polymer</span>
-						<span class="p-1 footer-title">harshatech2012</span>
-					</a>
-				</div>
+		Etiam finibus ligula ut erat mattis pretium. Donec consequat faucibus risus in dapibus. Ut vestibulum eget orci nec varius. Nullam vehicula lorem ligula. Maecenas placerat libero libero, eu eleifend arcu iaculis et. Curabitur rutrum leo elit, vitae posuere libero gravida sit amet. Nam sem mauris, volutpat et viverra eu, lobortis vitae enim. Donec sed eros quis dui lacinia sagittis non sed neque. Curabitur pharetra viverra diam, in viverra odio porttitor eget. Sed at nisl nec nibh dapibus congue quis facilisis diam. Proin pellentesque accumsan enim. Aliquam eget orci sed ante consequat pellentesque. Quisque at mauris quis metus tincidunt luctus eget quis dui. Nam rhoncus lacus non lacus condimentum egestas.
+
+		Nullam at viverra est. Nullam lobortis malesuada tincidunt. Suspendisse potenti. Cras suscipit felis et nunc vestibulum fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a nibh tempor, mollis dolor vel, rhoncus nunc. Integer vel pellentesque mauris. Nam faucibus pretium sem sit amet tincidunt. Ut ipsum nibh, pulvinar non nisi vel, bibendum faucibus arcu. Nunc sollicitudin, massa sed sagittis accumsan, elit purus porttitor libero, vehicula dapibus eros erat et odio. Morbi hendrerit, nunc nec aliquam eleifend, lacus velit finibus diam, bibendum congue lacus dui id libero. Suspendisse sagittis tincidunt velit, et rhoncus ipsum congue vitae. Aliquam lacinia, neque a lobortis elementum, augue tellus egestas justo, at mattis dui ex sed eros. Nulla euismod ullamcorper est eget facilisis. Duis ac massa ac lacus porttitor iaculis. Integer feugiat libero nec quam iaculis congue.
+
+		Pellentesque purus enim, mollis at tristique at, scelerisque vel augue. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer tempor, elit ut lacinia rhoncus, ipsum sem tempor quam, vitae tincidunt mi orci interdum augue. Sed sagittis commodo ante non luctus. Suspendisse rutrum tortor at interdum mollis. Ut quam sapien, vehicula in interdum vel, maximus nec orci. Suspendisse sagittis mi hendrerit ultrices dictum. Proin auctor imperdiet lacus, a tempor odio ultrices a. Phasellus semper eleifend velit ut porta. Morbi condimentum lacinia ex sit amet elementum. Nulla sed porta turpis. Ut tempor tincidunt est, at rutrum tortor accumsan quis. Aliquam erat volutpat. Curabitur ac erat porttitor, faucibus ipsum vel, luctus ante.
+
+		Pellentesque quis porta mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas lacinia ut turpis vel tristique. Suspendisse magna libero, porta vel felis vel, interdum porttitor augue. Suspendisse rutrum metus molestie mauris cursus tincidunt. Ut ut leo rhoncus, vestibulum nisl ac, mattis sem. Cras eu viverra purus. In eu vestibulum mauris. Quisque rhoncus lacus id purus porta porta. Donec sollicitudin vehicula molestie. Sed interdum sapien tellus, a viverra tortor imperdiet vitae. In semper gravida tincidunt. Pellentesque ornare at tellus a fermentum. Vivamus dolor libero, faucibus eu dapibus nec, ullamcorper ut lectus. Nam diam elit, condimentum id porttitor vitae, sagittis vel lacus. Suspendisse odio nisl, sagittis ut ligula vel, rhoncus efficitur sapien.
+
+		Pellentesque blandit volutpat blandit. Quisque pharetra pharetra mi sed sollicitudin. Curabitur vitae nibh id lacus elementum maximus sit amet vel mi. Vestibulum ultrices non nulla in porttitor. Nullam viverra neque nibh, ut semper nulla tempus et. Donec enim dolor, volutpat ac consectetur et, venenatis nec metus. Mauris euismod faucibus fermentum. Donec gravida suscipit lorem, eu molestie neque egestas id. Nam laoreet volutpat auctor. Phasellus sagittis lacus eget mi finibus, eget convallis tellus convallis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+
+		Quisque vitae orci vitae ex molestie pharetra. Fusce tortor lorem, laoreet non magna id, sagittis maximus velit. Donec felis augue, rutrum id feugiat eu, tincidunt sit amet sem. In sed eleifend nisl. Sed egestas, ligula quis facilisis dapibus, ligula nulla tincidunt tortor, sed placerat diam sapien sit amet massa. Cras pretium nisl sit amet ligula maximus molestie. Quisque feugiat viverra metus, non fringilla lorem sollicitudin eget. Sed ac nibh elit. Nunc nec sapien id nisi finibus iaculis sit amet id lorem. Nulla facilisi. Etiam neque tellus, tincidunt ultrices sapien a, molestie condimentum sem. Sed vitae commodo turpis. Ut sit amet massa metus.
+
+		Vestibulum feugiat eleifend enim ut posuere. Nam mattis tincidunt neque ut dapibus. Quisque at cursus mauris. Donec nec neque velit. Duis imperdiet ultricies velit, et porta ante sagittis eget. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi iaculis, diam porttitor euismod viverra, nibh purus lobortis leo, ac condimentum nibh lorem nec ex.
+
+		Aenean felis augue, placerat eget ipsum a, aliquet sollicitudin nisi. Aliquam luctus felis vitae lectus condimentum tempus. Proin tellus eros, sodales in varius in, pellentesque vel sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fringilla vehicula magna, sed ullamcorper lectus volutpat eu. Nunc facilisis sed neque at eleifend. Fusce ipsum quam, iaculis nec porttitor nec, efficitur vitae leo. Curabitur eget dui sed leo commodo molestie at id nibh.
+
+		Aliquam ac leo vel velit bibendum facilisis eget non lacus. Integer vel sapien luctus mauris laoreet interdum quis sed nisl. Nunc sollicitudin ut metus in mollis. Aliquam ipsum sapien, ultricies a maximus id, venenatis sit amet magna. Maecenas in ipsum vitae turpis dapibus tincidunt. Sed varius non eros vel dictum. Nunc congue mauris leo, sit amet lacinia sem accumsan at. Ut pretium eget purus quis maximus. Mauris at mi at purus consequat facilisis sed ac erat. 
+
+	</div>
+
+	<!-- page footer -->		
+	<footer class="container mb-3">
+		<div class="row justify-content-between">
+			<div class="col-12"><hr></div>
+			<div class="col-auto">
+				<span class="fs-6">
+					Website designed by <a href="./contact.html">Harsha Vardhan</a>
+				</span>
+			</div>
+			<div class="col-auto">
+				<a href="./credits.html">
+					<span class="fs-6">Credits</span>
+				</a>
 			</div>
 		</div>
+	</footer>
 
-		<!-- JavaScript -->
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-	</body>
+	<!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+    	integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+    	integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous">
+    </script>
+</body>
+
 </html>
