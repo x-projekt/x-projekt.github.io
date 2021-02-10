@@ -49,11 +49,11 @@
 	background-color: #B3E5FC;
 }
 
-.cards-stack a {
+.content a {
 	white-space: normal;
 	color: #424242;
 }
 
-.cards-stack a:hover {
+.content a:hover {
 	color: #03A9F4;
 }
