@@ -13,7 +13,7 @@ a {
 	white-space: nowrap;
 }
 
-/* Navbar Section */
+/* navbar section */
 .navbar {
 	box-shadow:0 0px 4px rgba(0, 0, 0, 0.3), 0px 3px 40px rgba(0, 0, 0, 0.1);	
 	background-color: #ffffff;
@@ -47,7 +47,7 @@ a .nav-item.selected {
 	cursor: default;
 }
 
-/* Header Formatting */
+/* header formatting */
 .header-section {
 	background-color: #424242;
 	width: 100%;
@@ -70,7 +70,7 @@ a .nav-item.selected {
 	color: #ffdd4b;
 }
 
-/* Footer Section */
+/* footer section */
 footer {
 	color: #707070;
 }
@@ -81,4 +81,17 @@ footer a {
 
 footer a:hover {
 	color: #03A9F4;
+}
+
+/* content formatting */
+.content .title-hash {
+	color: #80e27e;
+}
+
+.content .title-hash:hover {
+	color: #4caf50;
+}
+
+.content title {
+	color: #424242;
 }
