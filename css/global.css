@@ -71,8 +71,12 @@ a .nav-item.selected {
 }
 
 /* Footer Section */
+footer {
+	color: #707070;
+}
+
 footer a {
-	color:  #424242;
+	color:  #707070;
 }
 
 footer a:hover {
