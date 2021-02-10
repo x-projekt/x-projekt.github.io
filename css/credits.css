@@ -1,0 +1,10 @@
+.media {
+    display: flex!important;
+    flex-direction: row!important;
+    align-items: center!important;
+    margin-top: 2rem;
+}
+
+.media-image {
+    margin-right: 1rem;
+}
