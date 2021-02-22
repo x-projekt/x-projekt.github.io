@@ -1,0 +1,17 @@
+.greyed {
+    filter: grayscale(100%);
+    height: 100px;
+    width: 100px;
+}
+
+.greyed:hover {
+    filter: none;
+}
+
+/* .greyed#github {
+    fill: aqua;
+}
+
+.greyed#github:hover {
+    color: black;
+} */
