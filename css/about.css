@@ -8,10 +8,14 @@
     filter: none;
 }
 
-/* .greyed#github {
-    fill: aqua;
+.profile-link {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+    margin: 1rem!important;
+    width: 100px !important;
+    background-color: #fff!important;
+    border-radius: .25rem!important;
 }
 
-.greyed#github:hover {
-    color: black;
-} */
+.profile-link:hover{
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+}
