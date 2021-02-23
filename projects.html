@@ -74,13 +74,11 @@
 
 	<!-- content -->		
 	<div class="container mb-3 content cards-stack">
-		<div class="row justify-content-center card-object">
-			<div class="col-auto col-md-3 col-lg-2 align-self-center">
-				<object type="image/svg+xml" data="./img/svg/sensor.svg" class="card-image">
-					<img src="./res/img/fallback-image.png" height="200" width="200">
-				</object>
-			</div>
-			<div class="col-md-9 col-lg-10">				
+		<div class="card-object flex-md-row flex-column">
+			<object class="card-image" type="image/svg+xml" data="./img/svg/sensor.svg" >
+				<img src="./res/img/fallback-image.png" height="200" width="200">
+			</object>
+			<div class="card-content">				
 				<div class="card-heading">
 					<a href="./projects/dual-raspi-stereo-vision.html">
 						Dual Raspberry Pi Stereo Vision
@@ -89,28 +87,22 @@
 				<p class="lead">
 					A stereo-vision system composed of two Raspberry Pi's each with an infrared camera module. The images are processed using the OpenCV library while a custom software is used for synchronizing the two cameras.
 				</p>
-				<hr class="mb-0">
-				<div class="row justify-content-between my-2">
-					<div class="col-auto">
-						<div class="d-inline-flex">
-							<div class="hashtags">#python</div>
-							<div class="hashtags">#computer-vision</div>
-						</div>
+				<hr class="w-100 my-0">
+				<div class="card-footing">
+					<div class="d-inline-flex flex-wrap w-auto">
+						<div class="hashtags">#python</div>
+						<div class="hashtags">#computer-vision</div>
 					</div>
-					<div class="col-auto ms-auto">
-						<div class="align-items-center d-inline-flex h-100">March, 2017</div>
-					</div>
+					<div class="card-date">March, 2017</div>
 				</div>
 			</div>
 		</div>
 
-		<div class="row justify-content-center card-object">
-			<div class="col-auto col-md-3 col-lg-2 align-self-center">
-				<object type="image/svg+xml" data="./img/svg/visual-effects.svg" class="card-image">
-					<img src="./res/img/fallback-image.png" height="200" width="200">
-				</object>
-			</div>
-			<div class="col-md-9 col-lg-10">
+		<div class="card-object flex-md-row flex-column">
+			<object class="card-image" type="image/svg+xml" data="./img/svg/visual-effects.svg" class="card-image">
+				<img src="./res/img/fallback-image.png" height="200" width="200">
+			</object>
+			<div class="card-content">
 				<div class="card-heading">
 					<a href="./projects/vfx.html">
 						Foray into visual effects
@@ -119,49 +111,41 @@
 				<p class="lead">
 					A stereo-vision system composed of two Raspberry Pi's each with an infrared camera module. The images are processed using the OpenCV library while a custom software is used for synchronizing the two cameras.
 				</p>
-				<hr class="mb-0">
-				<div class="row justify-content-between my-2">
-					<div class="col-auto">
-						<div class="d-inline-flex">
-							<div class="hashtags">#solidworks</div>
-							<div class="hashtags">#after-effects</div>
-							<div class="hashtags">#3ds-max</div>
-							<div class="hashtags">#illustrator</div>
-						</div>
+				<hr class="w-100 my-0">
+				<div class="card-footing">
+					<div class="d-inline-flex flex-wrap w-auto">
+						<div class="hashtags">#solidworks</div>
+						<div class="hashtags">#after-effects</div>
+						<div class="hashtags">#3ds-max</div>
+						<div class="hashtags">#illustrator</div>
 					</div>
-					<div class="col-auto ms-auto mt-3 mt-lg-0"> <!-- ad-hoc margins -->
-						<div class="align-items-center d-inline-flex h-100">March, 2013 - May, 2017</div>
-					</div>
+					<div class="card-date">March, 2013 - May, 2017</div>
 				</div>
 			</div>
 		</div>
 		
 		<!-- empty template -->
-		<!-- <div class="row justify-content-center card-object">
-			<div class="col-auto col-md-3 col-lg-2 align-self-center">
-				<object type="image/svg+xml" data="... project-image ..." class="card-image">
-					<img src="./res/img/fallback-image.png" height="200" width="200">
-				</object>
-			</div>
-			<div class="col-md-9 col-lg-10">				
+		<!-- <div class="card-object flex-md-row flex-column">
+			<object class="card-image" type="image/svg+xml" data="./img/svg/visual-effects.svg" class="card-image">
+				<img src="... svg-image-url ..." height="200" width="200">
+			</object>
+			<div class="card-content">
 				<div class="card-heading">
-					<a href="... project-page ...">
+					<a href="... project-link ...">
 						... project-title ...
 					</a>
 				</div>
 				<p class="lead">
 					... project description ...
 				</p>
-				<hr class="mb-0">
-				<div class="row justify-content-between my-2">
-					<div class="col-auto">
-						<div class="d-inline-flex">
-							<div class="hashtags">#... project-hashtags ...</div>
-						</div>
+				<hr class="w-100 my-0">
+				<div class="card-footing">
+					<div class="d-inline-flex flex-wrap w-auto">
+						...
+						<div class="hashtags">... project-hashtags ...</div>
+						...
 					</div>
-					<div class="col-auto ms-auto">
-						<div class="align-items-center d-inline-flex h-100">... project-duration ...</div>
-					</div>
+					<div class="card-date">... project-date ...</div>
 				</div>
 			</div>
 		</div> -->
