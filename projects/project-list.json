@@ -1,0 +1,38 @@
+{
+    "placeholders": {
+        "title": "{project.title}"
+    },
+
+    "projects": [
+        {
+            "card.image": {
+                "data": "./img/svg/sensor.svg"
+            },
+            "card.title": {
+                "text": "Dual Raspberry Pi Stereo Vision",
+                "href": "./projects/dual-raspi-stereo-vision.html"
+            },
+            "card.description": "A stereo-vision system composed of two Raspberry Pi's each with an infrared camera module. The images are processed using the OpenCV library while a custom software is used for synchronizing the two cameras.",
+            "card.tags": ["python", "computer-vision"],
+            "card.date": {
+                "to": "2016-06-20",
+                "from": "2017-04-20"
+            }
+        },
+        {
+            "card.image": {
+                "data": "./img/svg/visual-effects.svg"
+            },
+            "card.title": {
+                "text": "Product design and visual effects",
+                "href": "./projects/product-design-vfx.html"
+            },
+            "card.description": "This details the products I designed and their associated product design videos I created.",
+            "card.tags": ["solidworks", "after-effects", "3ds-max", "illustrator"],
+            "card.date": {
+                "to": "2017-05-20",
+                "from": "2013-03-20"
+            }
+        }
+    ]
+}
