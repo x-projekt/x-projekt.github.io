@@ -43,14 +43,15 @@ function showProjects(data) {
 
 $(document).ready(function() {
     const url = "https://raw.githubusercontent.com/harshatech2012/harshatech2012.github.io/iss2/projects/project-list.json";
-    fetch(url, {method: "GET"}).then(response => {
-        if (response.ok) {
-            return response.json();
-        } else {
+    fetch(url, {method: "GET"})
+        .then(response => {
+            if (response.ok) {
+                return response.json();
+            } else {
+                showError();
+            }
+        }).then(showProjects)
+        .catch(error => {
             showError();
-        }
-    }).then(showProjects)
-      .catch(error => {
-        console.log(error);
-    });
+        });
 });
