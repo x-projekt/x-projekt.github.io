@@ -7,34 +7,37 @@ function showError() {
 }
 
 function showProjects(data) {
-    let projectList = data["projects"];
     let container = $(contentSelector);
-    for (let i = 0; i < projectList.length; i++) {
-        p = projectList[i];
-        container.append(`<div class="card-object flex-md-row flex-column">
-            <object class="card-image" type="image/svg+xml" data="${p["card.image"]["data"]}">
-                <img src="./img/fallback-image.png" height="200" width="200">
-            </object>
-            <div class="card-content">
-                <div class="card-heading">
-                    <a href="${p["card.title"]["href"]}">
-                        ${p["card.title"]["text"]}
-                    </a>
-                </div>
-                <p class="lead">
-                    ${p["card.description"]}
-                </p>
-                <hr class="w-100 my-0">
-                <div class="card-footing">
-                    <div class="d-inline-flex flex-wrap w-auto">
-                        ${p["card.tags"].map(function (key) {
-            return `<div class="hashtags">#${key}</div>`
-        }).join("\n")}
+    if (data.hasOwnProperty("projects")) {
+        data.projects.forEach(p => {
+            container.append(
+                `<div class="card-object flex-md-row flex-column">
+                    <object class="card-image" type="image/svg+xml" data="${p["card.image"]["data"]}">
+                        <img src="./img/fallback-image.png" height="200" width="200">
+                    </object>
+                    <div class="card-content">
+                        <div class="card-heading">
+                            <a href="${p["card.title"]["href"]}">
+                                ${p["card.title"]["text"]}
+                            </a>
+                        </div>
+                        <p class="lead">
+                            ${p["card.description"]}
+                        </p>
+                        <hr class="w-100 my-0">
+                        <div class="card-footing">
+                            <div class="d-inline-flex flex-wrap w-auto">
+                                ${p["card.tags"].map(function (key) {
+                                    return `<div class="hashtags">#${key}</div>`
+                                }).join("\n")}
+                            </div>
+                            <div class="card-date">${printDate(parseDate(p["card.date"]["from"]))} - ${printDate(parseDate(p["card.date"]["to"]))}</div>
+                        </div>
                     </div>
-                    <div class="card-date">${printDate(parseDate(p["card.date"]["from"]))} - ${printDate(parseDate(p["card.date"]["to"]))}</div>
-                </div>
-            </div>
-        </div>`);
+                </div>`);
+        });
+    } else {
+        showError();
     }
 }
 
