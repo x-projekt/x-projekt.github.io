@@ -6,8 +6,8 @@ function showError() {
     $(contentSelector).html(errorFragment());
 }
 
-function showProjects(projectList) {
-    let p;
+function showProjects(data) {
+    let projectList = data["projects"];
     let container = $(contentSelector);
     for (let i = 0; i < projectList.length; i++) {
         p = projectList[i];
@@ -42,12 +42,12 @@ $(document).ready(function() {
     const url = "https://raw.githubusercontent.com/harshatech2012/harshatech2012.github.io/iss2/projects/project-list.json";
     fetch(url, {method: "GET"}).then(response => {
         if (response.ok) {
-            let projectsJson = response.json();
-            showProjects(projectsJson["projects"])
+            return response.json();
         } else {
             showError();
         }
-    }).catch(error => {
+    }).then(showProjects)
+      .catch(error => {
         console.log(error);
     });
 });
