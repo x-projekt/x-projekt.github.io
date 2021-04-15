@@ -95,3 +95,10 @@ footer a:hover {
 .content title {
 	color: #424242;
 }
+
+/* error formatting */
+.error {
+	color: #e53935;
+	font-size: 2.5rem;
+	font-weight: 300;
+}
