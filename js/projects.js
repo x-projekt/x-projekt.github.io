@@ -42,7 +42,7 @@ function showProjects(data) {
 }
 
 $(document).ready(function() {
-    const url = "https://raw.githubusercontent.com/harshatech2012/harshatech2012.github.io/iss2/projects/project-list.json";
+    const url = "https://raw.githubusercontent.com/harshatech2012/harshatech2012.github.io/master/projects/project-list.json";
     fetch(url, {method: "GET"})
         .then(response => {
             if (response.ok) {
