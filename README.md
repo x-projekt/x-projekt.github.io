@@ -1,4 +1,4 @@
-# Website for all projects by harshatech2012
+# Website for all my projects
 This repository consists of the source files for the website [https://x-projekt.github.io][website].
 
 ## License
