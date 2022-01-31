@@ -15,8 +15,8 @@
             "card.description": "A stereo-vision system composed of two Raspberry Pi's each with an infrared camera module. The images are processed using the OpenCV library while a custom software is used for synchronizing the two cameras.",
             "card.tags": ["python", "computer-vision"],
             "card.date": {
-                "to": "2016-06-20",
-                "from": "2017-04-20"
+                "to": "2017-04-20",
+                "from": "2016-06-20"
             }
         },
         {
