@@ -34,3 +34,8 @@ function errorFragment() {
 			</div>
 		</div>`;
 }
+
+$(document).ready(function() {
+	const url = "../html/footer.html";
+	$("body > .footer-insert").load(url);
+});
