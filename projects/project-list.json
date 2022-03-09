@@ -6,6 +6,21 @@
     "projects": [
         {
             "card.image": {
+                "data": "./img/svg/machine-learning.svg"
+            },
+            "card.title": {
+                "text": "Machine Learning",
+                "href": "./projects/machine-learning.html"
+            },
+            "card.description": "This repository contains the mathematical derivations and ground-up implementation  (i.e. without using pre-built components) of machine-learning algorithms. A part of this repository is inspired by the Deep Learning Specialization, a course by Deeplearning.ai.",
+            "card.tags": ["machine-learning", "python", "pytorch", "tex"],
+            "card.date": {
+                "to": "present",
+                "from": "2020-06-27"
+            }
+        },
+        {
+            "card.image": {
                 "data": "./img/svg/sensor.svg"
             },
             "card.title": {
