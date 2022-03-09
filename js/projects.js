@@ -1,6 +1,6 @@
 "use strict";
 
-const contentSelector = ".container.content";
+const contentSelector = ".container.projects-insert";
 
 function showError() {
     $(contentSelector).html(errorFragment());
