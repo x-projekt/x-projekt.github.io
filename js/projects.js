@@ -31,7 +31,7 @@ function showProjects(data) {
                                     return `<div class="hashtags">#${key}</div>`
                                 }).join("\n")}
                             </div>
-                            <div class="card-date">${printDate(parseDate(p["card.date"]["from"]))} - ${printDate(parseDate(p["card.date"]["to"]))}</div>
+                            <div class="card-date">${printDate(parseDate(p["card.date"]["from"]))} - ${(p["card.date"]["to"] === "present") ? "present" : printDate(parseDate(p["card.date"]["to"]))}</div>
                         </div>
                     </div>
                 </div>`);
