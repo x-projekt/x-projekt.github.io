@@ -36,8 +36,10 @@ function errorFragment() {
 }
 
 function insertError(error) {
-	let errorCode = $.get("../html/error.html");
-	let snippetDOM = $($.parseHTML(errorCode));
+	let snippetDOM = null;
+	$.get("../html/error.html", function(htmlCode) {
+		snippetDOM = $($.parseHTML(errorCode));
+	})
 	snippetDOM.find(".error-message-insert").append(error);
 	return snippetDOM.prop("outerHTML");
 }
@@ -84,8 +86,10 @@ function insertHeader(headerURL) {
 	let headerContainer = $("body > .header-insert");
 	elemData = headerContainer.data();
 	
-	let headerCode = $.trim($.get(headerURL));
-	let snippetDOM = $($.parseHTML(headerCode));
+	let snippetDOM = null;
+	$.get(headerURL, function(htmlCode) {
+		snippetDOM = $($.parseHTML(htmlCode));
+	});
 	snippetDOM.find("div.title-insert").html(elemData['title']);
 
 	headerContainer.html(snippetDOM.prop("outerHTML"));
@@ -96,8 +100,10 @@ function insertFooter(footerURL, bodyData) {
 		throw `Depth attribute not speficied.  [${location.pathname.split("/").pop()}]`;
 	}
 	
-	let footerCode = $.trim($.get(footerURL));
-	let snippetDOM = $($.parseHTML(footerCode));
+	let snippetDOM = null;
+	$.get(footerURL, function(htmlCode) {
+		snippetDOM = $($.parseHTML(htmlCode));
+	});
 	snippetDOM = updateURLs(snippetDOM, bodyData);
 
 	$("body > .footer-insert").html(snippetDOM.prop("outerHTML"));
@@ -108,8 +114,10 @@ function insertNavbar(navbarURL, bodyData) {
 		throw `Depth attribute not speficied.  [${location.pathname.split("/").pop()}]`;
 	}
 	
-	let navbarCode = $.get(navbarURL);
-	let snippetDOM = $($.parseHTML(navbarCode));
+	let snippetDOM = null;
+	$.get(navbarURL, function(htmlCode){
+		snippetDOM = $($.parseHTML(htmlCode));
+	});
 	snippetDOM = updateURLs(snippetDOM, bodyData);
 
 	$("body > .navbar-insert").html(snippetDOM.prop("outerHTML"));
