@@ -11,16 +11,18 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 
 	<!-- Custom CSS Stylesheets -->
-	<link rel="stylesheet" href="../css/global.css">		
+	<link rel="stylesheet" href="../css/global.css">
+	<link rel="stylesheet" href="../css/projects.css">
 	
 	<title>Machine Learning - Harsha Vardhan</title>
 </head>
 
 <body data-depth="1">
 	<!-- navigation bar -->
-    <div class="navbar-insert">
+    <div class="navbar-insert" data-select="projects">
         <!-- see global.js -->
     </div>
 
@@ -31,7 +33,234 @@
 
 	<!-- content -->		
 	<div class="container content error-insert mb-3">
-		<!-- insert primary content here -->
+		<p class="lead">
+			This repository contains the derivation and implementation of many popular machine-learning algorithms, primarily based on the neural-networks (i.e. the connectionist) appraoch.
+			A part of this course is inspired by the <a href="https://www.deeplearning.ai/program/deep-learning-specialization/">Deep Learning Specialization</a>, a series of courses offered by <a href="https://www.deeplearning.ai/">DeepLearning.AI</a>.
+		</p>
+		<div class="row mb-5">
+			<div class="col-12 mb-2">
+				<div class="display-4">
+					<a href="#models" id="graphics" class="title-hash">#</a>
+					<span class="title">Models</span>
+				</div>
+			</div>
+			<div class="col-11 ms-5">
+				<ol class="list-group list-group-numbered">
+					<li class="list-group-item">
+						<div class="d-flex justify-content-between align-items-center">
+							<div class="me-auto">
+								<h3>Logistic Regression</h3>
+							</div>
+							<div>
+								<i class="bi bi-clock-history"></i>
+								<span class="fw-light">March, 2022</span>
+							</div>
+						</div>
+						<div class="mb-3">
+							<a href="./machine-learning/0_logistic_regression/back-propagation.pdf">
+								<div class="d-inline hashtags ms-4">
+									back-propagation derivation
+									&nbsp;&nbsp;<i class="bi bi-file-earmark-pdf-fill"></i>
+								</div> 
+							</a>
+						</div>
+						<div class="mb-3 w-auto">
+							<ul>
+								<li class="fw-normal">
+									<a href="https://nbviewer.org/github/x-projekt/_machine-learning/blob/master/2_convolutional_neural_networks/hand-sign-recognizer.ipynb" target="_blank">
+										Cat classifier &nbsp;&nbsp;<i class="bi bi-box-arrow-up-right"></i>
+									</a>
+								</li>		
+							</ul>
+						</div>
+					</li>
+					<li class="list-group-item">
+						<div class="d-flex justify-content-between align-items-center">
+							<div class="me-auto">
+								<h3>Multi-layer Perceptrons</h3>
+							</div>
+							<div>
+								<i class="bi bi-clock-history"></i>
+								<span class="fw-light">March, 2022</span>
+							</div>
+						</div>
+						<div class="mb-3">
+							<a href="./machine-learning/0_logistic_regression/back-propagation.pdf">
+								<div class="d-inline hashtags ms-4">
+									back-propagation derivation
+									&nbsp;&nbsp;<i class="bi bi-file-earmark-pdf-fill"></i>
+								</div> 
+							</a>
+						</div>
+						<div class="mb-3 w-auto">
+							<ul>
+								<li class="fw-normal">
+									<a href="https://nbviewer.org/github/x-projekt/_machine-learning/blob/master/2_convolutional_neural_networks/hand-sign-recognizer.ipynb" target="_blank">
+										Cat classifier &nbsp;&nbsp;<i class="bi bi-box-arrow-up-right"></i>
+									</a>
+								</li>
+								<li class="fw-normal">
+									<a href="https://nbviewer.org/github/x-projekt/_machine-learning/blob/master/2_convolutional_neural_networks/hand-sign-recognizer.ipynb" target="_blank">
+										Hand-sign Recognizer &nbsp;&nbsp;<i class="bi bi-box-arrow-up-right"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="list-group-item">
+						<div class="d-flex justify-content-between align-items-center">
+							<div class="me-auto">
+								<h3>Convolutional Neural Networks</h3>
+							</div>
+							<div>
+								<i class="bi bi-clock-history"></i>
+								<span class="fw-light">March, 2022</span>
+							</div>
+						</div>
+						<div class="mb-3">
+							<div class="mb-2">
+								<a href="./machine-learning/0_logistic_regression/back-propagation.pdf">
+									<div class="d-inline hashtags ms-4">
+										back-propagation derivation (2D-Conv)
+										&nbsp;&nbsp;<i class="bi bi-file-earmark-pdf-fill"></i>
+									</div> 
+								</a>
+							</div>
+							<div class="mb-2">
+								<a href="./machine-learning/0_logistic_regression/back-propagation.pdf">
+									<div class="d-inline hashtags ms-4">
+										back-propagation derivation (3D-Conv)
+										&nbsp;&nbsp;<i class="bi bi-file-earmark-pdf-fill"></i>
+									</div> 
+								</a>
+							</div>
+						</div>
+						<div class="mb-3 w-auto">
+							<ul>
+								<li class="fw-normal">
+									<a href="https://nbviewer.org/github/x-projekt/_machine-learning/blob/master/2_convolutional_neural_networks/hand-sign-recognizer.ipynb" target="_blank">
+										Hand-sign Recognizer &nbsp;&nbsp;<i class="bi bi-box-arrow-up-right"></i>
+									</a>
+								</li>
+								<li class="fw-normal">
+									<a href="https://nbviewer.org/github/x-projekt/_machine-learning/blob/master/2_convolutional_neural_networks/hand-sign-recognizer.ipynb" target="_blank">
+										Car Detection &nbsp;&nbsp;<i class="bi bi-box-arrow-up-right"></i>
+									</a>
+								</li>
+								<li class="fw-normal">
+									<a href="https://nbviewer.org/github/x-projekt/_machine-learning/blob/master/2_convolutional_neural_networks/hand-sign-recognizer.ipynb" target="_blank">
+										Neural Style-transfer &nbsp;&nbsp;<i class="bi bi-box-arrow-up-right"></i>
+									</a>
+								</li>
+								<li class="fw-normal">
+									<a href="https://nbviewer.org/github/x-projekt/_machine-learning/blob/master/2_convolutional_neural_networks/hand-sign-recognizer.ipynb" target="_blank">
+										Facial Recognition &nbsp;&nbsp;<i class="bi bi-box-arrow-up-right"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="list-group-item">
+						<div class="d-flex justify-content-between align-items-center">
+							<div class="me-auto">
+								<h3>Recurrent Neural Networks</h3>
+							</div>
+							<div>
+								<i class="bi bi-clock-history"></i>
+								<span class="fw-light">March, 2022</span>
+							</div>
+						</div>
+						<div class="mb-3">
+							<div class="mb-2">
+								<a href="./machine-learning/0_logistic_regression/back-propagation.pdf">
+									<div class="d-inline hashtags ms-4">
+										back-propagation derivation (2D-Conv)
+										&nbsp;&nbsp;<i class="bi bi-file-earmark-pdf-fill"></i>
+									</div> 
+								</a>
+							</div>
+							<div class="mb-2">
+								<a href="./machine-learning/0_logistic_regression/back-propagation.pdf">
+									<div class="d-inline hashtags ms-4">
+										back-propagation derivation (3D-Conv)
+										&nbsp;&nbsp;<i class="bi bi-file-earmark-pdf-fill"></i>
+									</div> 
+								</a>
+							</div>
+						</div>
+						<div class="mb-3 w-auto">
+							<ul>
+								<li class="fw-normal">
+									<a href="https://nbviewer.org/github/x-projekt/_machine-learning/blob/master/2_convolutional_neural_networks/hand-sign-recognizer.ipynb" target="_blank">
+										Hand-sign Recognizer &nbsp;&nbsp;<i class="bi bi-box-arrow-up-right"></i>
+									</a>
+								</li>
+								<li class="fw-normal">
+									<a href="https://nbviewer.org/github/x-projekt/_machine-learning/blob/master/2_convolutional_neural_networks/hand-sign-recognizer.ipynb" target="_blank">
+										Car Detection &nbsp;&nbsp;<i class="bi bi-box-arrow-up-right"></i>
+									</a>
+								</li>
+								<li class="fw-normal">
+									<a href="https://nbviewer.org/github/x-projekt/_machine-learning/blob/master/2_convolutional_neural_networks/hand-sign-recognizer.ipynb" target="_blank">
+										Neural Style-transfer &nbsp;&nbsp;<i class="bi bi-box-arrow-up-right"></i>
+									</a>
+								</li>
+								<li class="fw-normal">
+									<a href="https://nbviewer.org/github/x-projekt/_machine-learning/blob/master/2_convolutional_neural_networks/hand-sign-recognizer.ipynb" target="_blank">
+										Facial Recognition &nbsp;&nbsp;<i class="bi bi-box-arrow-up-right"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ol>
+			</div>
+		</div>
+		
+		<div class="row mb-5">
+			<div class="col-12 mb-2">
+				<div class="display-4">
+					<a href="#notes" id="notes" class="title-hash">#</a>
+					<span class="title">Notes</span>
+				</div>
+			</div>
+			<div class="col-11 ms-5">
+				<div class="mb-3 w-auto">
+					<ul>
+						<li class="fw-normal">
+							<a href="https://nbviewer.org/github/x-projekt/_machine-learning/blob/master/2_convolutional_neural_networks/hand-sign-recognizer.ipynb" target="_blank">
+								Logistic &amp; Sigmoid functions &nbsp;&nbsp;<i class="bi bi-box-arrow-up-right"></i>
+							</a>
+						</li>
+						<li class="fw-normal">
+							<a href="https://nbviewer.org/github/x-projekt/_machine-learning/blob/master/2_convolutional_neural_networks/hand-sign-recognizer.ipynb" target="_blank">
+								ReLU &amp; Leaky-ReLU functions &nbsp;&nbsp;<i class="bi bi-box-arrow-up-right"></i>
+							</a>
+						</li>
+						<li class="fw-normal">
+							<a href="https://nbviewer.org/github/x-projekt/_machine-learning/blob/master/2_convolutional_neural_networks/hand-sign-recognizer.ipynb" target="_blank">
+								Hyperbolic tangent function&nbsp;&nbsp;<i class="bi bi-box-arrow-up-right"></i>
+							</a>
+						</li>
+						<li class="fw-normal">
+							<a href="https://nbviewer.org/github/x-projekt/_machine-learning/blob/master/2_convolutional_neural_networks/hand-sign-recognizer.ipynb" target="_blank">
+								Exponentially-weighted Moving-averages &nbsp;&nbsp;<i class="bi bi-box-arrow-up-right"></i>
+							</a>
+						</li>
+						<li class="fw-normal">
+							<a href="https://nbviewer.org/github/x-projekt/_machine-learning/blob/master/2_convolutional_neural_networks/hand-sign-recognizer.ipynb" target="_blank">
+								Softmax function &nbsp;&nbsp;<i class="bi bi-box-arrow-up-right"></i>
+							</a>
+						</li>
+						<li class="fw-normal">
+							<a href="https://nbviewer.org/github/x-projekt/_machine-learning/blob/master/2_convolutional_neural_networks/hand-sign-recognizer.ipynb" target="_blank">
+								Logistic &amp; Sigmoid functions &nbsp;&nbsp;<i class="bi bi-box-arrow-up-right"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<!-- page footer -->
