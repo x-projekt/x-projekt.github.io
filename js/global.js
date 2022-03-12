@@ -94,14 +94,15 @@ function insertNavbar(navbarURL, bodyData) {
 	let snippetDOM = null;
 	$.get(navbarURL, function(htmlCode){
 		snippetDOM = $($.parseHTML(htmlCode));
-
-		let select = (bodyData.hasOwnProperty("select")) ? bodyData["select"] : null;
+		let navbarContainer = $("body > .navbar-insert");
+		let elemData = navbarContainer.data();
+		let select = (elemData.hasOwnProperty("select")) ? elemData["select"] : null;
 		if (select) {
-			snippetDOM.find(`a[href='$${select}$']`).attr("selected");
+			snippetDOM.find(`a[href='$${select}$'] > li`).addClass("selected");
 		}
 
 		updateURLs(snippetDOM, bodyData);
-		$("body > .navbar-insert").html(snippetDOM.prop("outerHTML"));
+		navbarContainer.html(snippetDOM.prop("outerHTML"));
 	});
 
 }
