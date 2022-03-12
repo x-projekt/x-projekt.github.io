@@ -35,7 +35,93 @@ function errorFragment() {
 		</div>`;
 }
 
+function insertError(error) {
+	let errorCode = $.get("../html/error.html");
+	let snippetDOM = $($.parseHTML(errorCode));
+	snippetDOM.find(".error-message-insert").append(error);
+	return snippetDOM.prop("outerHTML");
+}
+
+const rootPages = {
+	"about": "about.html",
+	"projects": "projects.html",
+	"publications": "publications.html",
+	"essays": "essays.html",
+	"contact": "contact.html",
+	"home": "index.html",
+	"credits": "credits.html",
+};
+
+const depthPrefix = "../";
+const error = 404;
+const affix = "$";
+
+function getURL(urlId, depth) {
+	if (!rootPages.hasOwnProperty(urlId)) {
+		throw `Unknown href URL-ID: ${urlId}. [${location.pathname.split("/").pop()}]`;
+	}
+
+	var intDepth = parseInt(depth) || -1;
+	if (intDepth === -1) {
+		throw `Non-integer document depth ${depth}. [${location.pathname.split("/").pop()}]`
+	}
+
+	return depthPrefix.repeat(parseInt(depth)).concat(rootPages[urlId]);
+}
+
+function updateURLs(dom, bodyData) {
+	let href = null, url = null;
+	return dom.find("a").each(function () {
+		href = $(this).attr("href");
+		if (href.indexOf(affix) === 0 && href.lastIndexOf(affix) === href.length - 1) {
+			url = getURL(href.substr(1, href.length - 2), bodyData["depth"]);
+			$(this).attr("href", url);
+		}
+	});
+}
+
+function insertHeader(headerURL) {
+	let headerContainer = $("body > .header-insert");
+	elemData = headerContainer.data();
+	
+	let headerCode = $.trim($.get(headerURL));
+	let snippetDOM = $($.parseHTML(headerCode));
+	snippetDOM.find("div.title-insert").html(elemData['title']);
+
+	headerContainer.html(snippetDOM.prop("outerHTML"));
+}
+
+function insertFooter(footerURL, bodyData) {
+	if (!bodyData.hasOwnProperty("depth")) {
+		throw `Depth attribute not speficied.  [${location.pathname.split("/").pop()}]`;
+	}
+	
+	let footerCode = $.trim($.get(footerURL));
+	let snippetDOM = $($.parseHTML(footerCode));
+	snippetDOM = updateURLs(snippetDOM, bodyData);
+
+	$("body > .footer-insert").html(snippetDOM.prop("outerHTML"));
+}
+
+function insertNavbar(navbarURL, bodyData) {
+	if (!bodyData.hasOwnProperty("depth")) {
+		throw `Depth attribute not speficied.  [${location.pathname.split("/").pop()}]`;
+	}
+	
+	let navbarCode = $.get(navbarURL);
+	let snippetDOM = $($.parseHTML(navbarCode));
+	snippetDOM = updateURLs(snippetDOM, bodyData);
+
+	$("body > .navbar-insert").html(snippetDOM.prop("outerHTML"));
+}
+
 $(document).ready(function() {
-	const url = "../html/footer.html";
-	$("body > .footer-insert").load(url);
+	let bodyData = $("body").data();
+	try {
+		insertNavbar("../html/navbar.html", bodyData);
+		insertHeader("../html/header.html");
+		insertFooter("../html/footer.html", bodyData);
+	} catch (error) {
+		$(".error-insert").html(insertError(error));
+	}
 });
