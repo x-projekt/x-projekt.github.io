@@ -8,33 +8,6 @@ function printDate(dateObject) {
         "en-US", {month: "long"})}, ${dateObject.toLocaleDateString("en-US", {year: "numeric"})}`;
 }
 
-function errorFragment() {
-    return`		
-		<div>
-			<span class="error d-inline-block">
-				Oops... something went wrong!
-			</span>
-			<div class="lead">
-				There was an error while loading the page. We suggest you do the following to
-				diagnose the issue:
-				<ol>
-					<li>Refresh the page.</li>
-					<li>(<small class="text-muted">if step-1 doesn't work</small>) Try opening this
-						link in incognito/private-browsing window. You may copy and paste the URL 
-						from	the address bar.
-						<ol type="a">
-							<li>(<small class="text-muted">if step-2 works</small>) Clear your 
-							browser Cache and reload the page in a non-incognito window.</li>
-						</ol>
-					</li>
-					<li>(<small class="text-muted">if step-3 doesn't work</small>) The problem
-						could very well	be on our end. And we apologize for any and all
-						inconvenience caused, while we work to solve it.</li>
-				</ol>
-			</div>
-		</div>`;
-}
-
 function insertError(error) {
 	let snippetDOM = null;
 	$.get("../html/error.html", function(htmlCode) {
@@ -73,7 +46,7 @@ function getURL(urlId, depth) {
 
 function updateURLs(dom, bodyData) {
 	let href = null, url = null;
-	return dom.find("a").each(function () {
+	dom.find("a").each(function () {
 		href = $(this).attr("href");
 		if (href.indexOf(affix) === 0 && href.lastIndexOf(affix) === href.length - 1) {
 			url = getURL(href.substr(1, href.length - 2), bodyData["depth"]);
@@ -92,7 +65,6 @@ function insertHeader(headerURL) {
 		snippetDOM.find("div.title-insert").html(elemData['title']);
 		headerContainer.html(snippetDOM.prop("outerHTML"));
 	});
-
 }
 
 function insertFooter(footerURL, bodyData) {
@@ -103,7 +75,7 @@ function insertFooter(footerURL, bodyData) {
 	let snippetDOM = null;
 	$.get(footerURL, function(htmlCode) {
 		snippetDOM = $($.parseHTML(htmlCode));
-		snippetDOM = updateURLs(snippetDOM, bodyData);
+		updateURLs(snippetDOM, bodyData);
 		$("body > .footer-insert").html(snippetDOM.prop("outerHTML"));
 	});
 
@@ -117,7 +89,7 @@ function insertNavbar(navbarURL, bodyData) {
 	let snippetDOM = null;
 	$.get(navbarURL, function(htmlCode){
 		snippetDOM = $($.parseHTML(htmlCode));
-		snippetDOM = updateURLs(snippetDOM, bodyData);
+		updateURLs(snippetDOM, bodyData);
 		$("body > .navbar-insert").html(snippetDOM.prop("outerHTML"));
 	});
 
