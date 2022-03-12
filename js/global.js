@@ -9,9 +9,8 @@ function printDate(dateObject) {
 }
 
 function insertError(error) {
-	let snippetDOM = null;
 	$.get("../html/error.html", function(htmlCode) {
-		snippetDOM = $($.parseHTML(htmlCode));
+		let snippetDOM = $($.parseHTML(htmlCode));
 		snippetDOM.find(".error-message-insert").append(error);
 		$(".error-insert").html(snippetDOM.prop("outerHTML"));
 	});
@@ -64,9 +63,8 @@ function insertHeader(headerURL) {
 	let headerContainer = $("body > .header-insert");
 	elemData = headerContainer.data();
 	
-	let snippetDOM = null;
 	$.get(headerURL, function(htmlCode) {
-		snippetDOM = $($.parseHTML(htmlCode));
+		let snippetDOM = $($.parseHTML(htmlCode));
 		snippetDOM.find("div.title-insert").html(elemData['title']);
 		headerContainer.html(snippetDOM.prop("outerHTML"));
 	});
@@ -77,9 +75,8 @@ function insertFooter(footerURL, bodyData) {
 		throw `Document-depth not speficied.  [${location.pathname.split("/").pop()}]`;
 	}
 	
-	let snippetDOM = null;
 	$.get(footerURL, function(htmlCode) {
-		snippetDOM = $($.parseHTML(htmlCode));
+		let snippetDOM = $($.parseHTML(htmlCode));
 		updateURLs(snippetDOM, bodyData);
 		$("body > .footer-insert").html(snippetDOM.prop("outerHTML"));
 	});
@@ -91,9 +88,8 @@ function insertNavbar(navbarURL, bodyData) {
 		throw `Document-depth not speficied.  [${location.pathname.split("/").pop()}]`;
 	}
 	
-	let snippetDOM = null;
 	$.get(navbarURL, function(htmlCode){
-		snippetDOM = $($.parseHTML(htmlCode));
+		let snippetDOM = $($.parseHTML(htmlCode));
 		let navbarContainer = $("body > .navbar-insert");
 		let elemData = navbarContainer.data();
 		let select = (elemData.hasOwnProperty("select")) ? elemData["select"] : null;
