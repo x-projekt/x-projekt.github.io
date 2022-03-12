@@ -75,11 +75,11 @@
 	background-color: #B3E5FC;
 }
 
-.projects-insert a {
+.projects-insert a, li > a {
 	white-space: normal;
 	color: #424242;
 }
 
-.projects-insert a:hover {
+.projects-insert a:hover, li > a:hover {
 	color: #03A9F4;
 }
