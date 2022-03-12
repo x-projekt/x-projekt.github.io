@@ -38,7 +38,7 @@ function getURL(urlId, depth) {
 
 	var intDepth = parseInt(depth) || -1;
 	if (intDepth === -1) {
-		throw `Non-integer document depth ${depth}. [${location.pathname.split("/").pop()}]`
+		throw `Invalid document-depth: ${depth}. [${location.pathname.split("/").pop()}]`;
 	}
 
 	return depthPrefix.repeat(parseInt(depth)).concat(rootPages[urlId]);
@@ -48,9 +48,14 @@ function updateURLs(dom, bodyData) {
 	let href = null, url = null;
 	dom.find("a").each(function () {
 		href = $(this).attr("href");
-		if (href.indexOf(affix) === 0 && href.lastIndexOf(affix) === href.length - 1) {
-			url = getURL(href.substr(1, href.length - 2), bodyData["depth"]);
-			$(this).attr("href", url);
+		if (href.indexOf(affix) === 0 && href.lastIndexOf(affix) === href.length - 1 
+				&& href.length >= 2) { // what if href = "$"? hence, the length check.
+			try {
+				url = getURL(href.substr(1, href.length - 2), bodyData["depth"]);
+				$(this).attr("href", url);
+			} catch (error) {
+				insertError(error);
+			}
 		}
 	});
 }
@@ -69,7 +74,7 @@ function insertHeader(headerURL) {
 
 function insertFooter(footerURL, bodyData) {
 	if (!bodyData.hasOwnProperty("depth")) {
-		throw `Depth attribute not speficied.  [${location.pathname.split("/").pop()}]`;
+		throw `Document-depth not speficied.  [${location.pathname.split("/").pop()}]`;
 	}
 	
 	let snippetDOM = null;
@@ -83,7 +88,7 @@ function insertFooter(footerURL, bodyData) {
 
 function insertNavbar(navbarURL, bodyData) {
 	if (!bodyData.hasOwnProperty("depth")) {
-		throw `Depth attribute not speficied.  [${location.pathname.split("/").pop()}]`;
+		throw `Document-depth not speficied.  [${location.pathname.split("/").pop()}]`;
 	}
 	
 	let snippetDOM = null;
