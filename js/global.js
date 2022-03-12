@@ -38,7 +38,7 @@ function errorFragment() {
 function insertError(error) {
 	let snippetDOM = null;
 	$.get("../html/error.html", function(htmlCode) {
-		snippetDOM = $($.parseHTML(errorCode));
+		snippetDOM = $($.parseHTML(htmlCode));
 	})
 	snippetDOM.find(".error-message-insert").append(error);
 	return snippetDOM.prop("outerHTML");
