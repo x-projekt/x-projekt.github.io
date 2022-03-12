@@ -39,9 +39,10 @@ function insertError(error) {
 	let snippetDOM = null;
 	$.get("../html/error.html", function(htmlCode) {
 		snippetDOM = $($.parseHTML(htmlCode));
-	})
+	});
 	snippetDOM.find(".error-message-insert").append(error);
-	return snippetDOM.prop("outerHTML");
+	
+	$(".error-insert").html(snippetDOM.prop("outerHTML"));
 }
 
 const rootPages = {
