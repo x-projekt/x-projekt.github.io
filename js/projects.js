@@ -1,7 +1,7 @@
 "use strict";
 
 function showProjects(data) {
-    let container = $(contentSelector);
+    let container = $(".container.projects-insert");
     if (data.hasOwnProperty("projects")) {
         data.projects.forEach(p => {
             container.append(
