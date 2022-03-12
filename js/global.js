@@ -36,8 +36,8 @@ function getURL(urlId, depth) {
 		throw `Unknown href URL-ID: ${urlId}. [${location.pathname.split("/").pop()}]`;
 	}
 
-	var intDepth = parseInt(depth) || -1;
-	if (intDepth === -1) {
+	var intDepth = parseInt(depth);
+	if (isNaN(intDepth)) {
 		throw `Invalid document-depth: ${depth}. [${location.pathname.split("/").pop()}]`;
 	}
 
