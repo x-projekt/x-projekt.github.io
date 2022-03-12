@@ -1,11 +1,5 @@
 "use strict";
 
-const contentSelector = ".container.projects-insert";
-
-function showError() {
-    $(contentSelector).html(errorFragment());
-}
-
 function showProjects(data) {
     let container = $(contentSelector);
     if (data.hasOwnProperty("projects")) {
@@ -37,7 +31,7 @@ function showProjects(data) {
                 </div>`);
         });
     } else {
-        showError();
+        insertError("Missing JSON property: 'projects' property not found in project-list.json");
     }
 }
 
@@ -48,10 +42,10 @@ $(document).ready(function() {
             if (response.ok) {
                 return response.json();
             } else {
-                showError();
+                insertError("Unable to fetch project-list.json");
             }
         }).then(showProjects)
         .catch(error => {
-            showError();
+            insertError(error);
         });
 });
