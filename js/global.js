@@ -39,10 +39,9 @@ function insertError(error) {
 	let snippetDOM = null;
 	$.get("../html/error.html", function(htmlCode) {
 		snippetDOM = $($.parseHTML(htmlCode));
+		snippetDOM.find(".error-message-insert").append(error);
+		$(".error-insert").html(snippetDOM.prop("outerHTML"));
 	});
-	snippetDOM.find(".error-message-insert").append(error);
-	
-	$(".error-insert").html(snippetDOM.prop("outerHTML"));
 }
 
 const rootPages = {
@@ -90,10 +89,10 @@ function insertHeader(headerURL) {
 	let snippetDOM = null;
 	$.get(headerURL, function(htmlCode) {
 		snippetDOM = $($.parseHTML(htmlCode));
+		snippetDOM.find("div.title-insert").html(elemData['title']);
+		headerContainer.html(snippetDOM.prop("outerHTML"));
 	});
-	snippetDOM.find("div.title-insert").html(elemData['title']);
 
-	headerContainer.html(snippetDOM.prop("outerHTML"));
 }
 
 function insertFooter(footerURL, bodyData) {
@@ -104,10 +103,10 @@ function insertFooter(footerURL, bodyData) {
 	let snippetDOM = null;
 	$.get(footerURL, function(htmlCode) {
 		snippetDOM = $($.parseHTML(htmlCode));
+		snippetDOM = updateURLs(snippetDOM, bodyData);
+		$("body > .footer-insert").html(snippetDOM.prop("outerHTML"));
 	});
-	snippetDOM = updateURLs(snippetDOM, bodyData);
 
-	$("body > .footer-insert").html(snippetDOM.prop("outerHTML"));
 }
 
 function insertNavbar(navbarURL, bodyData) {
@@ -118,10 +117,10 @@ function insertNavbar(navbarURL, bodyData) {
 	let snippetDOM = null;
 	$.get(navbarURL, function(htmlCode){
 		snippetDOM = $($.parseHTML(htmlCode));
+		snippetDOM = updateURLs(snippetDOM, bodyData);
+		$("body > .navbar-insert").html(snippetDOM.prop("outerHTML"));
 	});
-	snippetDOM = updateURLs(snippetDOM, bodyData);
 
-	$("body > .navbar-insert").html(snippetDOM.prop("outerHTML"));
 }
 
 $(document).ready(function() {
