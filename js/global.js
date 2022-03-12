@@ -94,6 +94,12 @@ function insertNavbar(navbarURL, bodyData) {
 	let snippetDOM = null;
 	$.get(navbarURL, function(htmlCode){
 		snippetDOM = $($.parseHTML(htmlCode));
+
+		let select = (bodyData.hasOwnProperty("select")) ? bodyData["select"] : null;
+		if (select) {
+			snippetDOM.find(`a[href='$${select}$']`).attr("selected");
+		}
+
 		updateURLs(snippetDOM, bodyData);
 		$("body > .navbar-insert").html(snippetDOM.prop("outerHTML"));
 	});
