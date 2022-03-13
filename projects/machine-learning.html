@@ -57,7 +57,7 @@
 							</div>
 						</div>
 						<div class="mb-3">
-							<a href="./machine-learning/0_logistic_regression/back-propagation.pdf">
+							<a href="./machine-learning/0_logistic_regression/back-propagation.pdf" data-bs-toggle="modal" data-bs-target="#pdfViewer">
 								<div class="d-inline hashtags ms-4">
 									back-propagation derivation
 									&nbsp;&nbsp;<i class="bi bi-file-earmark-pdf-fill"></i>
@@ -119,7 +119,7 @@
 						</div>
 						<div class="mb-3">
 							<div class="mb-2">
-								<a href="./machine-learning/0_logistic_regression/back-propagation.pdf">
+								<a href="./machine-learning/0_logistic_regression/back-propagation.pdf" data-bs-toggle="modal" data-bs-target="#pdfViewer">
 									<div class="d-inline hashtags ms-4">
 										back-propagation derivation (2D-Conv)
 										&nbsp;&nbsp;<i class="bi bi-file-earmark-pdf-fill"></i>
@@ -127,7 +127,7 @@
 								</a>
 							</div>
 							<div class="mb-2">
-								<a href="./machine-learning/0_logistic_regression/back-propagation.pdf">
+								<a href="./machine-learning/0_logistic_regression/back-propagation.pdf" data-bs-toggle="modal" data-bs-target="#pdfViewer">
 									<div class="d-inline hashtags ms-4">
 										back-propagation derivation (3D-Conv)
 										&nbsp;&nbsp;<i class="bi bi-file-earmark-pdf-fill"></i>
@@ -172,7 +172,7 @@
 						</div>
 						<div class="mb-3">
 							<div class="mb-2">
-								<a href="./machine-learning/0_logistic_regression/back-propagation.pdf">
+								<a href="./machine-learning/0_logistic_regression/back-propagation.pdf" data-bs-toggle="modal" data-bs-target="#pdfViewer">
 									<div class="d-inline hashtags ms-4">
 										back-propagation derivation (2D-Conv)
 										&nbsp;&nbsp;<i class="bi bi-file-earmark-pdf-fill"></i>
@@ -180,7 +180,7 @@
 								</a>
 							</div>
 							<div class="mb-2">
-								<a href="./machine-learning/0_logistic_regression/back-propagation.pdf">
+								<a href="./machine-learning/0_logistic_regression/back-propagation.pdf" data-bs-toggle="modal" data-bs-target="#pdfViewer">
 									<div class="d-inline hashtags ms-4">
 										back-propagation derivation (3D-Conv)
 										&nbsp;&nbsp;<i class="bi bi-file-earmark-pdf-fill"></i>
@@ -263,6 +263,29 @@
 		</div>
 	</div>
 
+	<!-- Modal -->
+	<div class="modal fade" id="pdfViewer" tabindex="-1" aria-labelledby="modal-label" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-scrollable modal-fullscreen">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="modal-label">Modal title</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<div class="container-fluid h-100">
+						<div class="row h-100">
+							<div class="col-12 h-100">
+								<div class="d-flex justify-content-center flex-row h-100">
+									<div id="adobe-dc-view" class="h-100 w-100"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+  
 	<!-- page footer -->
 	<div class="footer-insert">
 		<!-- see global.js-->
@@ -278,7 +301,17 @@
 	
 	<!-- Custom scripts -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
 	<script src="../js/global.js"></script>
+	<script type="text/javascript">
+		document.addEventListener("adobe_dc_view_sdk.ready", function(){
+			var adobeDCView = new AdobeDC.View({clientId: "85e4fb3e61b54f668ab5032c88be400d", divId: "adobe-dc-view"});
+			adobeDCView.previewFile({
+				content:{location: {url: "https://documentcloud.adobe.com/view-sdk-demo/PDFs/Bodea Brochure.pdf"}},
+				metaData:{fileName: "Bodea Brochure.pdf"}
+			}, {defaultViewMode: "FIT_PAGE"});
+		});
+	</script>
 </body>
 
 </html>
