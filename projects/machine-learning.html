@@ -57,7 +57,8 @@
 							</div>
 						</div>
 						<div class="mb-3">
-							<a id="modal-anchor" href="./machine-learning/0_logistic_regression/back-propagation.pdf" data-bs-toggle="modal" data-bs-target="#pdfViewer">
+							<a id="modal-anchor" href="./machine-learning/0_logistic_regression/back-propagation.pdf" 
+									data-bs-toggle="modal" data-bs-target="#pdfViewer" data-modal-title="Backprop: Logistic Regression">
 								<div class="d-inline hashtags ms-4">
 									back-propagation derivation
 									&nbsp;&nbsp;<i class="bi bi-file-earmark-pdf-fill"></i>
@@ -85,7 +86,8 @@
 							</div>
 						</div>
 						<div class="mb-3">
-							<a id="modal-anchor" href="./machine-learning/1_multi_layer_perceptrons/back-propagation.pdf" data-bs-toggle="modal" data-bs-target="#pdfViewer">
+							<a id="modal-anchor" href="./machine-learning/1_multi_layer_perceptrons/back-propagation.pdf" 
+									data-bs-toggle="modal" data-bs-target="#pdfViewer" data-modal-title="Backprop: Multi-layer Perceptrons">
 								<div class="d-inline hashtags ms-4">
 									back-propagation derivation
 									&nbsp;&nbsp;<i class="bi bi-file-earmark-pdf-fill"></i>
@@ -119,7 +121,8 @@
 						</div>
 						<div class="mb-3">
 							<div class="mb-2">
-								<a id="modal-anchor" href="./machine-learning/2_convolutional_neural_networks/back-propagation_Conv2D.pdf" data-bs-toggle="modal" data-bs-target="#pdfViewer">
+								<a id="modal-anchor" href="./machine-learning/2_convolutional_neural_networks/back-propagation_Conv2D.pdf" 
+										data-bs-toggle="modal" data-bs-target="#pdfViewer" data-modal-title="Backprop: CNN (2D-Conv)">
 									<div class="d-inline hashtags ms-4">
 										back-propagation derivation (2D-Conv)
 										&nbsp;&nbsp;<i class="bi bi-file-earmark-pdf-fill"></i>
@@ -127,7 +130,8 @@
 								</a>
 							</div>
 							<div class="mb-2">
-								<a id="modal-anchor" href="./machine-learning/2_convolutional_neural_networks/back-propagation_Conv2D.pdf" data-bs-toggle="modal" data-bs-target="#pdfViewer">
+								<a id="modal-anchor" href="./machine-learning/2_convolutional_neural_networks/back-propagation_Conv2D.pdf" 
+										data-bs-toggle="modal" data-bs-target="#pdfViewer" data-modal-title="Backprop: CNN (3D-Conv)">
 									<div class="d-inline hashtags ms-4">
 										back-propagation derivation (3D-Conv)
 										&nbsp;&nbsp;<i class="bi bi-file-earmark-pdf-fill"></i>
@@ -172,7 +176,8 @@
 						</div>
 						<div class="mb-3">
 							<div class="mb-2">
-								<a id="modal-anchor" href="./machine-learning/2_convolutional_neural_networks/back-propagation_Conv2D.pdf" data-bs-toggle="modal" data-bs-target="#pdfViewer">
+								<a id="modal-anchor" href="./machine-learning/2_convolutional_neural_networks/back-propagation_Conv2D.pdf" 
+										data-bs-toggle="modal" data-bs-target="#pdfViewer" data-modal-title="Backprop: RNN">
 									<div class="d-inline hashtags ms-4">
 										back-propagation derivation (2D-Conv)
 										&nbsp;&nbsp;<i class="bi bi-file-earmark-pdf-fill"></i>
@@ -180,7 +185,8 @@
 								</a>
 							</div>
 							<div class="mb-2">
-								<a id="modal-anchor" href="./machine-learning/2_convolutional_neural_networks/back-propagation_Conv2D.pdf" data-bs-toggle="modal" data-bs-target="#pdfViewer">
+								<a id="modal-anchor" href="./machine-learning/2_convolutional_neural_networks/back-propagation_Conv2D.pdf" 
+										data-bs-toggle="modal" data-bs-target="#pdfViewer" data-modal-title="Backprop: RNN">
 									<div class="d-inline hashtags ms-4">
 										back-propagation derivation (3D-Conv)
 										&nbsp;&nbsp;<i class="bi bi-file-earmark-pdf-fill"></i>
@@ -263,7 +269,7 @@
 		<div class="modal-dialog modal-dialog-scrollable modal-fullscreen">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title" id="modal-label">Modal title</h5>
+					<h5 class="modal-title" id="modal-label">modal-title-here</h5>
 					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 				</div>
 				<div class="modal-body">
@@ -311,6 +317,8 @@
 			showPrintPDF: false};
 
 		$("#pdfViewer").on('shown.bs.modal', function (event) {
+			$("#modal-label").html(event.relatedTarget.getAttribute("data-modal-title"));
+
 			let filePath = event.relatedTarget.href;
 			previewFile.content.location.url = filePath;
 			previewFile.metaData.fileName = filePath.split("/").pop();
