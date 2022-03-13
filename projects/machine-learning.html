@@ -304,18 +304,20 @@
 			adobeDCView = new AdobeDC.View({clientId: "85e4fb3e61b54f668ab5032c88be400d", divId: "adobe-dc-view"});
 		});
 
-		$("a#modal-anchor").on('click', function(event) {
-			adobeDCView.previewFile({
-				content:{
-					location: {
-						url: event.currentTarget.href}
-					},
-				metaData: {
-					fileName: "Bodea Brochure.pdf"
-				}
-			}, {
-				defaultViewMode: "FIT_PAGE"
-			});
+		var previewFile = {
+				content:{location: {url: null}},
+				metaData: {fileName: null}
+			};
+		var previewConfig = {
+				defaultViewMode: "FIT_PAGE",
+				enableLinearization: true
+			};
+
+		$("#pdfViewer").on('shown.bs.modal', function (event) {
+			let filePath = event.relatedTarget.href;
+			previewFile.content.location.url = filePath;
+			previewFile.metaData.fileName = filePath.split("/").pop();
+			adobeDCView.previewFile(previewFile, previewConfig);
 		});
 	</script>
 </body>
