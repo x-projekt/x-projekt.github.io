@@ -57,7 +57,7 @@
 							</div>
 						</div>
 						<div class="mb-3">
-							<a href="./machine-learning/0_logistic_regression/back-propagation.pdf" data-bs-toggle="modal" data-bs-target="#pdfViewer">
+							<a id="modal-anchor" href="./machine-learning/0_logistic_regression/back-propagation.pdf" data-bs-toggle="modal" data-bs-target="#pdfViewer">
 								<div class="d-inline hashtags ms-4">
 									back-propagation derivation
 									&nbsp;&nbsp;<i class="bi bi-file-earmark-pdf-fill"></i>
@@ -85,7 +85,7 @@
 							</div>
 						</div>
 						<div class="mb-3">
-							<a href="./machine-learning/1_multi_layer_perceptrons/back-propagation.pdf" data-bs-toggle="modal" data-bs-target="#pdfViewer">
+							<a id="modal-anchor" href="./machine-learning/1_multi_layer_perceptrons/back-propagation.pdf" data-bs-toggle="modal" data-bs-target="#pdfViewer">
 								<div class="d-inline hashtags ms-4">
 									back-propagation derivation
 									&nbsp;&nbsp;<i class="bi bi-file-earmark-pdf-fill"></i>
@@ -119,7 +119,7 @@
 						</div>
 						<div class="mb-3">
 							<div class="mb-2">
-								<a href="./machine-learning/2_convolutional_neural_networks/back-propagation_Conv2D.pdf" data-bs-toggle="modal" data-bs-target="#pdfViewer">
+								<a id="modal-anchor" href="./machine-learning/2_convolutional_neural_networks/back-propagation_Conv2D.pdf" data-bs-toggle="modal" data-bs-target="#pdfViewer">
 									<div class="d-inline hashtags ms-4">
 										back-propagation derivation (2D-Conv)
 										&nbsp;&nbsp;<i class="bi bi-file-earmark-pdf-fill"></i>
@@ -127,7 +127,7 @@
 								</a>
 							</div>
 							<div class="mb-2">
-								<a href="./machine-learning/2_convolutional_neural_networks/back-propagation_Conv2D.pdf" data-bs-toggle="modal" data-bs-target="#pdfViewer">
+								<a id="modal-anchor" href="./machine-learning/2_convolutional_neural_networks/back-propagation_Conv2D.pdf" data-bs-toggle="modal" data-bs-target="#pdfViewer">
 									<div class="d-inline hashtags ms-4">
 										back-propagation derivation (3D-Conv)
 										&nbsp;&nbsp;<i class="bi bi-file-earmark-pdf-fill"></i>
@@ -172,7 +172,7 @@
 						</div>
 						<div class="mb-3">
 							<div class="mb-2">
-								<a href="./machine-learning/2_convolutional_neural_networks/back-propagation_Conv2D.pdf" data-bs-toggle="modal" data-bs-target="#pdfViewer">
+								<a id="modal-anchor" href="./machine-learning/2_convolutional_neural_networks/back-propagation_Conv2D.pdf" data-bs-toggle="modal" data-bs-target="#pdfViewer">
 									<div class="d-inline hashtags ms-4">
 										back-propagation derivation (2D-Conv)
 										&nbsp;&nbsp;<i class="bi bi-file-earmark-pdf-fill"></i>
@@ -180,7 +180,7 @@
 								</a>
 							</div>
 							<div class="mb-2">
-								<a href="./machine-learning/2_convolutional_neural_networks/back-propagation_Conv2D.pdf" data-bs-toggle="modal" data-bs-target="#pdfViewer">
+								<a id="modal-anchor" href="./machine-learning/2_convolutional_neural_networks/back-propagation_Conv2D.pdf" data-bs-toggle="modal" data-bs-target="#pdfViewer">
 									<div class="d-inline hashtags ms-4">
 										back-propagation derivation (3D-Conv)
 										&nbsp;&nbsp;<i class="bi bi-file-earmark-pdf-fill"></i>
@@ -299,12 +299,23 @@
 	<script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
 	<script src="../js/global.js"></script>
 	<script type="text/javascript">
+		var adobeDCView = null;
 		document.addEventListener("adobe_dc_view_sdk.ready", function(){
-			var adobeDCView = new AdobeDC.View({clientId: "85e4fb3e61b54f668ab5032c88be400d", divId: "adobe-dc-view"});
+			adobeDCView = new AdobeDC.View({clientId: "85e4fb3e61b54f668ab5032c88be400d", divId: "adobe-dc-view"});
+		});
+
+		$("a#modal-anchor").on('click', function(event) {
 			adobeDCView.previewFile({
-				content:{location: {url: "https://documentcloud.adobe.com/view-sdk-demo/PDFs/Bodea Brochure.pdf"}},
-				metaData:{fileName: "Bodea Brochure.pdf"}
-			}, {defaultViewMode: "FIT_PAGE"});
+				content:{
+					location: {
+						url: event.currentTarget.href}
+					},
+				metaData: {
+					fileName: "Bodea Brochure.pdf"
+				}
+			}, {
+				defaultViewMode: "FIT_PAGE"
+			});
 		});
 	</script>
 </body>
