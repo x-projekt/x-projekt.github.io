@@ -102,3 +102,7 @@ footer a:hover {
 	font-size: 2.5rem;
 	font-weight: 300;
 }
+
+.todo { /* only to mark content that is listed but not yet completed */
+	color: #e53935 !important;
+}
