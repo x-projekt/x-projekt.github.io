@@ -10,7 +10,7 @@
             },
             "card.title": {
                 "text": "Natural Language Processing",
-                "href": "./projects/natural-language-processing.html"
+                "href": "./projects/nlp.html"
             },
             "card.description": "This repository contains the implementation of many popular and custom-designed natural language processing algorithms. A part of this repository is inspired by the problem-statements from the Natural Language Processing Specialization, a MOOC by DeepLearning.AI.",
             "card.tags": ["natural-language-processing", "python", "pytorch"],
@@ -54,10 +54,10 @@
                 "data": "./img/svg/visual-effects.svg"
             },
             "card.title": {
-                "text": "Product design and visual effects",
-                "href": "./projects/product-design-vfx.html"
+                "text": "Product Design and VFX",
+                "href": "./projects/design-vfx.html"
             },
-            "card.description": "This details the products I designed and their associated product design videos I created.",
+            "card.description": "This details the work I did for various product design events, which covered everything from conceiving the product (based on its desired functionality), to creating its CAD model, and performing mechanical simulations on it. On many ocassions I also created their corresponding product-demonstration videos.",
             "card.tags": ["solidworks", "after-effects", "3ds-max", "illustrator"],
             "card.date": {
                 "to": "2017-05-20",
