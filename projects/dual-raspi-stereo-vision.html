@@ -35,12 +35,12 @@
 	<div class="container content error-insert mb-3">
 		<div class="d-flex flex-row justify-content-end pt-3">
 			<div class="p-2">
-				<a href="https://grabcad.com/library/camera-mount-for-stereo-vision-1" title="view CAD model">
+				<a href="https://grabcad.com/library/camera-mount-for-stereo-vision-1" target="_blank" title="view CAD model">
 					<i class="bi bi-files"></i>&nbsp;&nbsp;GrabCAD
 				</a>
 			</div>
 			<div class="p-2">
-				<a href="https://github.com/x-projekt/dual-raspi-stereo-vision" title="view on Github">
+				<a href="https://github.com/x-projekt/dual-raspi-stereo-vision" target="_blank" title="view on Github">
 					<i class="bi bi-github"></i>&nbsp;&nbsp;Github
 				</a>
 			</div>
@@ -49,18 +49,18 @@
 
 		This project aims at performing point-cloud construction through 3D Stereo-mapping using two Raspberry Pi's, each with a connected Pi Camera CSI module. 
 		The pi's and the cameras are fixed in position by attaching to a custom designed and then 3D printed fixture. Also, we use the 
-		<a href="www.opencv.org">OpenCV</a> library for processing images (more specifically for the implementations of the semi-global block matching algorithm).
+		<a href="www.opencv.org" target="_blank">OpenCV</a> library for processing images (more specifically for the implementations of the semi-global block matching algorithm).
 		
 		<div class="row mt-3">
 			<div class="col-12">
 				<div class="display-4">
-					<a href="#hardware-setup" id="graphics" class="title-hash">#</a>
+					<a href="#" id="hardware-setup" class="title-hash">#</a>
 					<span class="title">Hardware Setup</span>
 				</div>
 			</div>
 			<div class="col-11 ms-3 ms-sm-5">
 				The most basic requirement is a frame to mount the electronics on to. 
-				So, for this purpose I've designed a <a href="" title="Download the CAD model">frame</a>frame (which can be 3D-printed). 
+				So, for this purpose I've designed a <a href="https://grabcad.com/library/camera-mount-for-stereo-vision-1" target="_blank" title="view the CAD model">frame</a> (which can be 3D-printed). 
 				It has a <i>baseline distance</i> of 15 cm (see the figure below).
 				
 				<div class="my-4">
@@ -74,9 +74,9 @@
 				
 				The following components are required:
 				<ul>
-					<li><a href="https://www.raspberrypi.org/products/raspberry-pi-2-model-b/">Raspberry Pi 2 Model B</a> (x1)</li>
-					<li><a href="https://www.raspberrypi.org/products/raspberry-pi-3-model-b/">Raspberry Pi 3 Model B</a> (x1)</li>
-					<li><a href="https://www.raspberrypi.org/products/pi-noir-camera-v2/">Pi NoIR CSI Camera Module</a> (x2)</li>
+					<li><a href="https://www.raspberrypi.org/products/raspberry-pi-2-model-b/" target="_blank">Raspberry Pi 2 Model B</a> (x1)</li>
+					<li><a href="https://www.raspberrypi.org/products/raspberry-pi-3-model-b/" target="_blank">Raspberry Pi 3 Model B</a> (x1)</li>
+					<li><a href="https://www.raspberrypi.org/products/pi-noir-camera-v2/" target="_blank">Pi NoIR CSI Camera Module</a> (x2)</li>
 				</ul>
 				
 				<span class="fw-bold">Note</span>: in the ensuing disussion, I will refer to Pi 2 as <i>Slave Pi</i> and Pi 3 as <i>Master Pi</i>. 
@@ -103,14 +103,14 @@
 		<div class="row mt-3">
 			<div class="col-12">
 				<div class="display-4">
-					<a href="#software-setup" id="graphics" class="title-hash">#</a>
+					<a href="#" id="software-setup" class="title-hash">#</a>
 					<span class="title">Software Setup</span>
 				</div>
 			</div>
 			<div class="col-11 ms-3 ms-sm-5">
 				<div class="fs-2">Getting started</div>
 				Flash two SD cards with the Rasbpian OS. 
-				(<span class="text-muted">You might follow the instaructions <a href="https://www.raspberrypi.org/documentation/installation/installing-images/">here</a></span>). 
+				(<span class="text-muted">You might follow the instaructions <a href="https://www.raspberrypi.org/documentation/installation/installing-images/" target="_blank">here</a></span>). 
 				Put the SD card into the Pi's and boot into it. 
 				Now, connect the Pi-NoIR Camera modules to each of the borads. 
 				Then in the device preferences enable the Camera, GPIO and SSH ports.
@@ -132,7 +132,7 @@
 				
 				<br>The above commands will install the required python libraries and also update the raspbian OS. 
 				Now, we need to setup OpenCV on Raspberry Pi, we will be compiling OpenCV from source code and installing it. 
-				The steps for setting up OpenCV 3 in Raspberry Pi 3 model B are available at this <a href="http://www.pyimagesearch.com/2016/04/18/install-guide-raspberry-pi-3-raspbian-jessie-opencv-3/">link</a> on pyimagesearach. Now that we have installed OpenCV and device drivers, we can move on to software setup.</p>
+				The steps for setting up OpenCV 3 in Raspberry Pi 3 model B are available at this <a href="http://www.pyimagesearch.com/2016/04/18/install-guide-raspberry-pi-3-raspbian-jessie-opencv-3/" target="_blank">link</a> on pyimagesearach. Now that we have installed OpenCV and device drivers, we can move on to software setup.</p>
 			
 				<div class="fs-2">Camera Synchronization</div>
 				Stereo vision depends heavily on synchronization of images taken from he two cameras. 
@@ -179,9 +179,9 @@
 							<div class="d-flex justify-content-center">
 								<code class="d-block">  
 									interface eth0
-									<br>static ip_address=<span class="hljs-number">192.168</span><span class="hljs-number">.120</span><span class="hljs-number">.10</span>
-									<br>static routers=<span class="hljs-number">192.168</span><span class="hljs-number">.120</span><span class="hljs-number">.1</span>
-									<br>static domain_name_servers=<span class="hljs-number">192.168</span><span class="hljs-number">.120</span><span class="hljs-number">.1</span>
+									<br>static ip_address=192.168.120.10
+									<br>static routers=192.168.120.1
+									<br>static domain_name_servers=192.168.120.1
 								</code>
 							</div>
 					</li>
@@ -240,7 +240,7 @@
 		<div class="row mt-3">
 			<div class="col-12">
 				<div class="display-4">
-					<a href="#run" id="run" class="title-hash">#</a>
+					<a href="#" id="run" class="title-hash">#</a>
 					<span class="title">Running the application</span>
 				</div>
 			</div>
