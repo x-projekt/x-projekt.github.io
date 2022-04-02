@@ -48,21 +48,6 @@
                 "to": "2017-04-20",
                 "from": "2016-06-20"
             }
-        },
-        {
-            "card.image": {
-                "data": "./img/svg/visual-effects.svg"
-            },
-            "card.title": {
-                "text": "Product Design and VFX",
-                "href": "./projects/design-vfx.html"
-            },
-            "card.description": "This details the work I did for various product design events, which covered everything from conceiving the product (based on its desired functionality), to creating its CAD model, and performing mechanical simulations on it. On many ocassions I also created their corresponding product-demonstration videos.",
-            "card.tags": ["solidworks", "after-effects", "3ds-max", "illustrator"],
-            "card.date": {
-                "to": "2017-05-20",
-                "from": "2013-03-20"
-            }
         }
     ]
 }
