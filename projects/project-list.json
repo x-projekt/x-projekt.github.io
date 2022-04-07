@@ -27,7 +27,7 @@
                 "text": "Machine Learning",
                 "href": "./projects/machine-learning.html"
             },
-            "card.description": "This repository contains the mathematical derivations and ground-up implementation  (i.e. without using pre-programed network components) of machine-learning algorithms. A part of this repository is inspired by the problem-statements from the Deep Learning Specialization, a MOOC by DeepLearning.AI.",
+            "card.description": "This repository contains the mathematical derivations and ground-up implementation  (i.e. without using any pre-built modules) of machine-learning algorithms. A part of this repository is inspired by the problem-statements from the Deep Learning Specialization, a MOOC by DeepLearning.AI.",
             "card.tags": ["machine-learning", "python", "pytorch", "tex"],
             "card.date": {
                 "to": "present",
