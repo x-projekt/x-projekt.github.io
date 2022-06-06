@@ -28,9 +28,9 @@
                 "href": "./projects/machine-learning.html"
             },
             "card.description": "This repository contains the mathematical derivations and ground-up implementation  (i.e. without using any pre-built modules) of machine-learning algorithms. A part of this repository is inspired by the problem-statements from the Deep Learning Specialization, a MOOC by DeepLearning.AI.",
-            "card.tags": ["machine-learning", "python", "pytorch", "tex"],
+            "card.tags": ["machine-learning", "python", "pytorch", "deep-learning"],
             "card.date": {
-                "to": "present",
+                "to": "2022-06-12",
                 "from": "2021-11-09"
             }
         },
