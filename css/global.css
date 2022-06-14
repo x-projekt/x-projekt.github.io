@@ -106,3 +106,10 @@ footer a:hover {
 .todo { /* only to mark content that is listed but not yet completed */
 	color: #e53935 !important;
 }
+
+.note {
+	background-color: #eeeeee;
+	border-radius: 3px;
+	margin-bottom: 1rem;
+	padding: 0.5rem;
+}
