@@ -81,7 +81,9 @@
 					<li><a href="https://www.raspberrypi.org/products/pi-noir-camera-v2/" target="_blank">Pi NoIR CSI Camera Module</a> (x2)</li>
 				</ul>
 				
-				<span class="fw-bold">Note</span>: in the ensuing disussion, I will refer to Pi 2 as <i>Slave Pi</i> and Pi 3 as <i>Master Pi</i>. 
+				<div class="note">
+					<span class="fw-bold">Note</span>: in the ensuing disussion, I will refer to Pi 2 as <i>Slave Pi</i> and Pi 3 as <i>Master Pi</i>. 
+				</div>
 				
 				<br><br>All the image processing is performed on the Master Pi. 
 				The CSI Camera modules are attached to each of the Pi's. 
@@ -117,11 +119,14 @@
 				Now, connect the Pi-NoIR Camera modules to each of the borads. 
 				Then in the device preferences enable the Camera, GPIO and SSH ports.
 				
-				<br><br><span class="fw-bold">Note</span>: you may also access the device preferences using the following command in the terminal and follow the instructions accordingly:
-				<div class="w-100 text-center">
-					<code>
-						$&gt; sudo raspi-config
-					</code>
+				<br><br>
+				<div class="note">
+					<span class="fw-bold">Note</span>: you may also access the device preferences using the following command in the terminal and follow the instructions accordingly:
+					<div class="w-100 text-center">
+						<code>
+							$&gt; sudo raspi-config
+						</code>
+					</div>
 				</div>
 				
 				<br>After enabling the Camera, SSH and GPIO ports, run the following commands, to install the libraries for accessing the Cameras and Sense Hat. </p>
@@ -160,7 +165,9 @@
 						</ul>
 					</li>
 				</ul>
-				<span class="fw-bold">Note</span>: the implementation of the above two methods is still under development.
+				<div class="note">
+					<span class="fw-bold">Note</span>: the implementation of the above two methods is still under development.
+				</div>
 
 				<br><br><div class="fs-4">NTP Synchronization</div>
 				For NTP Synchronization, we setup and NTP server on the Master Pi and synchronize time on the Slave Pi. 
@@ -200,8 +207,10 @@
 						</div>
 					</li>
 				</ul>
-				<span class="fw-bold">Note:</span> the time on Master Pi need not be in sync with the real-world time. 
-				But the time on the Slave Pi must be synchronized with that of the Master Pi, and the above steps ensure that.
+				<div class="note">
+					<span class="fw-bold">Note:</span> the time on Master Pi need not be in sync with the real-world time. 
+					But the time on the Slave Pi must be synchronized with that of the Master Pi, and the above steps ensure that.
+				</div>
 			
 				<div class="fs-4">Hardware Synchronization</div>
 				<figure class="figure d-flex flex-column align-items-center">
@@ -234,8 +243,10 @@
 						<br>...
 					</code>
 				</div>
-				<span class="fw-bold">Note</span>: for better results during calibration hold the checherboard pattern as close to the camera as possible. 
-				And make sure that the checkerboard pattern is on a flat surface.
+				<div class="note">
+					<span class="fw-bold">Note</span>: for better results during calibration hold the checherboard pattern as close to the camera as possible. 
+					And make sure that the checkerboard pattern is on a flat surface.
+				</div>
 			</div>
 		</div>
 				
