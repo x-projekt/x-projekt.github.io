@@ -113,3 +113,14 @@ footer a:hover {
 	margin-bottom: 1rem;
 	padding: 0.5rem;
 }
+
+.note::before {
+	display: inline-block;
+	content: ' ';
+	background-image: url("../img/info-circle.svg");
+	background-size: 1.3rem 1.3rem;
+	height: 1.3rem;
+	width: 1.3rem;
+	margin: 0rem 0.25rem 0rem 0rem;
+	vertical-align: -20%;
+}
