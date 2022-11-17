@@ -3,8 +3,20 @@ p {
 }
 
 .quote {
-	background-color: #eeeeee;
-	border-radius: 3px;
-	margin-bottom: 1rem;
-	padding: 0.5rem;
+    display: flex;
+	flex-direction: row;
+	justify-content: start;
+	align-items: stretch;
+
+    background-color: #424242;
+    border-radius: 0.4rem;
+    margin-bottom: 2rem;
+    padding: 0rem 1rem 0rem 0rem;
+	overflow: hidden;
+}
+
+.quote-marker {
+	width: 2rem;
+	background-color: #03A9F4;
+	margin-right: 1rem;
 }
