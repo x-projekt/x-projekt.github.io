@@ -9,8 +9,8 @@ p {
 	align-items: stretch;
 
     background-color: #424242;
-    border-radius: 0.4rem;
-    margin-bottom: 2rem;
+    border-radius: 0.35rem;
+	margin: 1rem 0rem 1rem 0rem;
     padding: 0rem 1rem 0rem 0rem;
 	overflow: hidden;
 }
