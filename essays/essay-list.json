@@ -1,0 +1,37 @@
+{
+    "placeholders": {
+        "title": "{project.title}"
+    },
+
+    "essays": [
+        {
+            "card.title": {
+                "text": "Bataan Death March",
+                "href": "./essays/bataan-death-march.html"
+            },
+            "card.gist": "Life doesn't always go as planned...",
+            "card.tags": ["life", "miscellaneous"],
+            "card.date": "2022-11-19"
+        },
+
+        {
+            "card.title": {
+                "text": "The Way",
+                "href": "./essays/the-way.html"
+            },
+            "card.gist": "Finding yourself...",
+            "card.tags": ["life", "miscellaneous"],
+            "card.date": "2022-11-21"
+        },
+
+        {
+            "card.title": {
+                "text": "The Future",
+                "href": "./essays/the-future.html"
+            },
+            "card.gist": "Rituals could be quiet powerful...",
+            "card.tags": ["life", "miscellaneous"],
+            "card.date": "2022-11-24"
+        }
+    ]
+}
