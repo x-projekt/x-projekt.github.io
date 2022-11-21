@@ -1,8 +1,4 @@
 {
-    "placeholders": {
-        "title": "{project.title}"
-    },
-
     "essays": [
         {
             "card.title": {
@@ -11,7 +7,7 @@
             },
             "card.gist": "Life doesn't always go as planned...",
             "card.tags": ["life", "miscellaneous"],
-            "card.date": "2022-11-19"
+            "card.date": "2022-11-17"
         },
 
         {
@@ -21,7 +17,7 @@
             },
             "card.gist": "Finding yourself...",
             "card.tags": ["life", "miscellaneous"],
-            "card.date": "2022-11-21"
+            "card.date": "2022-11-19"
         },
 
         {

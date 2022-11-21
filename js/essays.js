@@ -2,14 +2,16 @@
 
 function showProjects(data) {
     let container = $(".container.essays-insert");
-    console.log(data)
+    data.sort(function(e1, e2) {
+        // lastest first, sort in descending order
+        // e2 - e1 < 0 => e1 comes before e2
+        return parseDate(e2["card.date"]) - parseDate(e1["card.date"]);
+    })
+
     if (data.hasOwnProperty("essays")) {
         data.projects.forEach(p => {
             container.append(
                 `<div class="card-object flex-md-row flex-column">
-                    <object class="card-image" type="image/svg+xml" data="${p["card.image"]["data"]}">
-                        <img src="./img/fallback-image.png" height="200" width="200">
-                    </object>
                     <div class="card-content">
                         <div class="card-heading">
                             <a href="${p["card.title"]["href"]}">
@@ -17,7 +19,7 @@ function showProjects(data) {
                             </a>
                         </div>
                         <p class="lead">
-                            ${p["card.description"]}
+                            ${p["card.gist"]}
                         </p>
                         <hr class="w-100 my-0">
                         <div class="card-footing">
@@ -26,7 +28,7 @@ function showProjects(data) {
                                     return `<div class="hashtags">#${key}</div>`
                                 }).join("\n")}
                             </div>
-                            <div class="card-date">${printDate(parseDate(p["card.date"]["from"]))} - ${(p["card.date"]["to"] === "present") ? "present" : printDate(parseDate(p["card.date"]["to"]))}</div>
+                            <div class="card-date">${printDate(parseDate(p["card.date"]))}</div>
                         </div>
                     </div>
                 </div>`);
