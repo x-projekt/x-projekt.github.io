@@ -32,6 +32,16 @@
             "card.gist": "Rituals could be quiet powerful...",
             "card.tags": ["life", "miscellaneous"],
             "card.date": "2022-11-24"
+        },
+
+        {
+            "card.title": {
+                "text": "Alienware vs Cloud-Computing",
+                "href": "./essays/alienware-vs-cc.html"
+            },
+            "card.gist": "Desire or Discipline?",
+            "card.tags": ["life", "technology"],
+            "card.date": "2022-11-21"
         }
     ]
 }
