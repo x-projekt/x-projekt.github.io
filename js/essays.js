@@ -1,5 +1,10 @@
 "use strict";
 
+function getPostDate(dateObject) {
+    return `${dateObject.toLocaleDateString("en-US", {day: "numeric"})} ${dateObject.toLocaleDateString(
+        "en-US", {month: "medium"})}, ${dateObject.toLocaleDateString("en-US", {year: "numeric"})}`;
+}
+
 function showProjects(data) {
     let container = $(".container.essays-insert");
     data.essays.sort(function(e1, e2) {
@@ -28,7 +33,7 @@ function showProjects(data) {
                                     return `<div class="hashtags">#${key}</div>`
                                 }).join("\n")}
                             </div>
-                            <div class="card-date">${printDate(parseDate(p["card.date"]))}</div>
+                            <div class="card-date">${getPostDate(parseDate(p["card.date"]))}</div>
                         </div>
                     </div>
                 </div>`);
