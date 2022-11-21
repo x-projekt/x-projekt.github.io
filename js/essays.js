@@ -2,6 +2,7 @@
 
 function showProjects(data) {
     let container = $(".container.essays-insert");
+    console.log(data)
     if (data.hasOwnProperty("essays")) {
         data.projects.forEach(p => {
             container.append(
