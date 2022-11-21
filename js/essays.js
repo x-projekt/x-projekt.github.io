@@ -2,14 +2,14 @@
 
 function showProjects(data) {
     let container = $(".container.essays-insert");
-    data.sort(function(e1, e2) {
+    data.essays.sort(function(e1, e2) {
         // lastest first, sort in descending order
         // e2 - e1 < 0 => e1 comes before e2
         return parseDate(e2["card.date"]) - parseDate(e1["card.date"]);
     })
 
     if (data.hasOwnProperty("essays")) {
-        data.projects.forEach(p => {
+        data.essays.forEach(p => {
             container.append(
                 `<div class="card-object flex-md-row flex-column">
                     <div class="card-content">
