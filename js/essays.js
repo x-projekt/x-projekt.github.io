@@ -2,7 +2,7 @@
 
 function getPostDate(dateObject) {
     return `${dateObject.toLocaleDateString("en-US", {day: "numeric"})} ${dateObject.toLocaleDateString(
-        "en-US", {month: "medium"})}, ${dateObject.toLocaleDateString("en-US", {year: "numeric"})}`;
+        "en-US", {month: "short"})}, ${dateObject.toLocaleDateString("en-US", {year: "numeric"})}`;
 }
 
 function showProjects(data) {
