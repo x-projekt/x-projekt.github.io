@@ -124,3 +124,11 @@ footer a:hover {
 	margin: 0rem 0.25rem 0rem 0rem;
 	vertical-align: -20%;
 }
+
+mark {
+	background-color: #e6ffff;
+}
+
+b, strong {
+	font-weight: bold;
+}
