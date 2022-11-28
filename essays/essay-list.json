@@ -12,20 +12,20 @@
 
         {
             "card.title": {
-                "text": "The Way",
-                "href": "./essays/the-way.html"
+                "text": "Life is anything but easy... (pt. 1)",
+                "href": "./essays/life-not-easy-1.html"
             },
-            "card.gist": "Finding yourself...",
+            "card.gist": "It is difficult to always be decisive in life. Very rarely do the decision seem obvious, most of the times you have to struggle ...",
             "card.tags": ["life", "miscellaneous"],
             "card.date": "2022-11-19"
         },
 
         {
             "card.title": {
-                "text": "The Future",
+                "text": "Life is anything but easy... (pt. 2)",
                 "href": "./essays/the-future.html"
             },
-            "card.gist": "Rituals can be quiet powerful...",
+            "card.gist": "It is difficult to always be decisive in life. Very rarely do the decision seem obvious, most of the times you have to struggle ...",
             "card.tags": ["life", "miscellaneous"],
             "card.date": "2022-11-24"
         },
@@ -38,6 +38,16 @@
             "card.gist": "Desire or Discipline?",
             "card.tags": ["life", "technology"],
             "card.date": "2022-11-21"
+        },
+
+        {
+            "card.title": {
+                "text": "Plan (Sem-1 Winter Break)",
+                "href": "./essays/plan-dec-2022.html"
+            },
+            "card.gist": "Everything I intend to accomplish during the winter-break after semester-I. At the outset it seems like a difficult to achieve, but I have to try.",
+            "card.tags": ["life", "technology"],
+            "card.date": "2022-11-29"
         }
     ]
 }
