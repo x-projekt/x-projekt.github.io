@@ -13,7 +13,7 @@
                 "href": "./projects/nlp.html"
             },
             "card.description": "This repository contains the implementation of many popular and custom-designed natural language processing algorithms. A part of this repository is inspired by the problem-statements from the Natural Language Processing Specialization, a MOOC by DeepLearning.AI.",
-            "card.tags": ["natural-language-processing", "python", "pytorch"],
+            "card.tags": ["nlp", "nlu", "computational-linguistics", "pytorch"],
             "card.date": {
                 "to": "present",
                 "from": "2022-04-25"
@@ -28,7 +28,7 @@
                 "href": "./projects/deep-learning.html"
             },
             "card.description": "This repository contains the mathematical derivations and ground-up implementation  (i.e. without using any pre-built modules) of common deep-learning algorithms. A part of this repository is inspired by the problem-statements from the Deep Learning Specialization, a MOOC by DeepLearning.AI.",
-            "card.tags": ["deep-learning", "python", "pytorch"],
+            "card.tags": ["deep-learning", "matrix-calculus", "pytorch"],
             "card.date": {
                 "to": "2022-06-12",
                 "from": "2021-11-09"
