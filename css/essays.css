@@ -99,3 +99,15 @@ p {
 .essays-insert a:hover, li > a:hover {
 	color: #03A9F4;
 }
+
+.check-color {
+	color: #2e7d32;
+}
+
+.x-color {
+	color: #d84315;
+}
+
+.hourglass-color {
+	color: #f9a825;
+}
