@@ -48,6 +48,16 @@
             "card.gist": "Everything I intend to accomplish during the winter-break after semester-I. At the outset it seems like a difficult to achieve, but I have to try.",
             "card.tags": ["life", "technology"],
             "card.date": "2022-11-29"
+        },
+
+        {
+            "card.title": {
+                "text": "Discipline not Desire (Plan Sem-II)",
+                "href": "./essays/plan-sem-2.html"
+            },
+            "card.gist": "Everything I intend to accomplish during my second semester at IIT Delhi. I need a disciplined mind and a tangible action-plan designed with my strengths and weaknesses in mind.",
+            "card.tags": ["life", "technology"],
+            "card.date": "2022-12-30"
         }
     ]
 }
