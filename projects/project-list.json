@@ -21,7 +21,7 @@
         },
         {
             "card.image": {
-                "data": "./img/svg/sensor.svg"
+                "data": "./img/svg/iso-cpp-logo-greyscale.svg"
             },
             "card.title": {
                 "text": "C++ Primer (Ed. 5) Solutions",
