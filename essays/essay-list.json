@@ -5,7 +5,7 @@
                 "text": "Bataan Death March",
                 "href": "./essays/bataan-death-march.html"
             },
-            "card.gist": "Life doesn't always go as planned...",
+            "card.gist": "It was on 26th of June, 2020, that I discovered my vocation. Since, then my journey has been anyting but easy - studying subjects from core Computer Science and Mathematics all by myself, with no external-pressure and no peer-group ...",
             "card.tags": ["life", "miscellaneous"],
             "card.date": "2022-11-17"
         },
@@ -15,7 +15,7 @@
                 "text": "Life is anything but easy... (pt. 1)",
                 "href": "./essays/life-not-easy-1.html"
             },
-            "card.gist": "It is difficult to always be decisive in life. Very rarely do the decision seem obvious, most of the times you have to struggle ...",
+            "card.gist": "Although getting into IIT Delhi was a ray of hope for me, my journey here didn't exactly start off the way I hoped it would. I am still carrying some emotional baggage from the three-year long 'Bataan Death March'. And the environment at [IIT] Delhi ...",
             "card.tags": ["life", "miscellaneous"],
             "card.date": "2022-11-19"
         },
@@ -25,7 +25,7 @@
                 "text": "Life is anything but easy... (pt. 2)",
                 "href": "./essays/life-not-easy-2.html"
             },
-            "card.gist": "It is difficult to always be decisive in life. Very rarely do the decision seem obvious, most of the times you have to struggle ...",
+            "card.gist": "I have thought about this question for almost 20 years of my life. Why do I exist? What is my purpose? And I think I have zeroed in on a train of thought which might answer the question. Look deep into nature and then you will ...",
             "card.tags": ["life", "miscellaneous"],
             "card.date": "2022-11-24"
         },
@@ -35,7 +35,7 @@
                 "text": "Alienware vs Cloud-Computing",
                 "href": "./essays/alienware-vs-cc.html"
             },
-            "card.gist": "Desire or Discipline?",
+            "card.gist": "I'm currently using a 2016 Dell Inspiron i7559 laptop. Although, this wasn't the best even in its time, it was decent for light-gaming and video-editing, especially given my budget. Now, it has been six years ...",
             "card.tags": ["life", "technology"],
             "card.date": "2022-11-21"
         },
@@ -45,17 +45,17 @@
                 "text": "Plan (Sem-1 Winter Break)",
                 "href": "./essays/plan-dec-2022.html"
             },
-            "card.gist": "Everything I intend to accomplish during the winter-break after semester-I. At the outset it seems like a difficult to achieve, but I have to try.",
+            "card.gist": "My 1st semester at IIT Delhi has finished. Although it spanned four months, I must admit I didn't properly learn anything. The curriculum seems to have been deliberately structured to merely give a taste ...",
             "card.tags": ["life", "technology"],
             "card.date": "2022-11-29"
         },
 
         {
             "card.title": {
-                "text": "Discipline not Desire (Plan Sem-II)",
+                "text": "Tick Tick... BOOM! (Plan Sem-II)",
                 "href": "./essays/plan-sem-2.html"
             },
-            "card.gist": "Everything I intend to accomplish during my second semester at IIT Delhi. I need a disciplined mind and a tangible action-plan designed with my strengths and weaknesses in mind.",
+            "card.gist": "After the debacle that was 'The Plan (Dec 2022)', I've realized that I cannot rush into things. I'll have to be patient & disciplined, and let things take their own course. So, here I describe ...",
             "card.tags": ["life", "technology"],
             "card.date": "2022-12-30"
         }
