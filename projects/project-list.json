@@ -16,7 +16,22 @@
             "card.tags": ["nlp", "nlu", "computational-linguistics", "pytorch"],
             "card.date": {
                 "to": "present",
-                "from": "2022-04-25"
+                "from": "2023-01-03"
+            }
+        },
+        {
+            "card.image": {
+                "data": "./img/svg/sensor.svg"
+            },
+            "card.title": {
+                "text": "C++ Primer (Ed. 5) Solutions",
+                "href": "./projects/cpp-primer.html"
+            },
+            "card.description": "Solutions to all the exercises in the book <i>Stanley B. Lippman, Jose Lajoie, and Barbara E. Moo. 2012. C++ Primer (5th. ed.). Addison-Wesley Professional</i>. As opposed to merely giving the answers to questions, I've tried to provide an explanation supplemented examples wherever possible.",
+            "card.tags": ["c++", "cpp-primer"],
+            "card.date": {
+                "to": "present",
+                "from": "2022-12-10"
             }
         },
         {
