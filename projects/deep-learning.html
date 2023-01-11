@@ -56,7 +56,47 @@
 		<div class="row mb-5">
 			<div class="col-12">
 				<div class="display-4">
-					<a href="#models" id="graphics" class="title-hash">#</a>
+					<a href="#setup" id="setup" class="title-hash">#</a>
+					<span class="title">Environment Setup</span>
+				</div>
+			</div>
+			<div class="col-11 ms-3 ms-sm-5">
+				<p class="lead">
+					Run the following command to setup a bare python virtual-environment.
+				</p>
+				<div class="d-flex justify-content-center">
+					<code class="d-block lead">
+						python -m venv &lt;environment-name&gt;
+					</code>
+				</div>
+			</div>
+			<div class="col-11 ms-3 ms-sm-5">
+				<p class="lead">
+					<b>(Recommended)</b> Activate the above created environment, then run the following command for installing the required libraries/packages. The <code>requirements.txt</code> file in the repository's root-directory. Also, you must use <code>python>=3.8</code> for this to work!
+				</p>
+				<div class="d-flex justify-content-center">
+					<code class="d-block lead">
+						pip install -r requirements.txt
+					</code>
+				</div>
+				<br>
+				<p class="lead">
+					Alternatively, you may install the packages on your own by running the following command. <b>Note</b> that this method may leave some of the notebooks incompatible, depending on the verson of python and the corresponding packages that get installed!
+				</p>
+				<div class="d-flex justify-content-center">
+					<code class="d-block lead">
+						pip install h5py jupyterlab tqdm numpy matplotlib \<br>
+						&nbsp;&nbsp;torch torchvision torchaudio torchtext \<br>
+						&nbsp;&nbsp;--extra-index-url https://download.pytorch.org/whl/cu117 
+					</code>
+				</div>
+			</div>
+		</div>
+
+		<div class="row mb-5">
+			<div class="col-12">
+				<div class="display-4">
+					<a href="#models" id="models" class="title-hash">#</a>
 					<span class="title">Models</span>
 				</div>
 			</div>
