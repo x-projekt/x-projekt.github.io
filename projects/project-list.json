@@ -10,7 +10,7 @@
             },
             "card.title": {
                 "text": "Natural Language Processing",
-                "href": "./projects/nlp.html"
+                "href": "./_nlp"
             },
             "card.description": "This repository contains the implementation of many popular and custom-designed natural language processing algorithms. A part of this repository is inspired by the problem-statements from the Natural Language Processing Specialization, a MOOC by DeepLearning.AI.",
             "card.tags": ["nlp", "nlu", "computational-linguistics", "pytorch"],
