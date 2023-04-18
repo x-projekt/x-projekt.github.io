@@ -40,7 +40,7 @@
             },
             "card.title": {
                 "text": "Deep Learning",
-                "href": "./projects/deep-learning.html"
+                "href": "_deep-learning"
             },
             "card.description": "This repository contains the mathematical derivations and ground-up implementation  (i.e. without using any pre-built modules) of common deep-learning algorithms. A part of this repository is inspired by the problem-statements from the Deep Learning Specialization, a MOOC by DeepLearning.AI.",
             "card.tags": ["deep-learning", "matrix-calculus", "pytorch"],
