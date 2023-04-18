@@ -114,7 +114,7 @@ footer a:hover {
 	padding: 0.5rem;
 }
 
-.note::before {
+.note.info-icon::before {
 	display: inline-block;
 	content: ' ';
 	background-image: url("https://x-projekt.github.io/img/info-circle.svg");
