@@ -8,7 +8,7 @@ p {
 	justify-content: start;
 	align-items: stretch;
 
-    background-color: #424242;
+    background-color: var(--core-d-black);
     border-radius: 0.35rem;
 	margin: 1rem 0rem 1rem 0rem;
     padding: 0rem 1rem 0rem 0rem;
@@ -17,7 +17,7 @@ p {
 
 .quote-marker {
 	width: 2rem;
-	background-color: #03A9F4;
+	background-color: var(--core-c-blue);
 	margin-right: 1rem;
 }
 
@@ -35,7 +35,7 @@ p {
 	-webkit-box-shadow:0 .5rem 1rem rgba(0,0,0,.15)!important;
 	-moz-box-shadow:0 .5rem 1rem rgba(0,0,0,.15)!important;
 	box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
-    background-color: #fff!important;
+    background-color: var(--core-d-white) !important;
     border-radius: .25rem!important;
 }
 
@@ -77,8 +77,8 @@ p {
 }
 
 .hashtags {
-	color: #039BE5;
-	background-color: #E1F5FE;
+	color: var(--core-c-blue);
+	background-color: var(--core-a-blue);
 	margin: 0.5rem 1rem 0.5rem 0rem;
 	padding: 0.3rem 0.5rem 0.3rem 0.5rem;
 	border-radius: 3px;
@@ -87,27 +87,27 @@ p {
 
 .hashtags:hover {
 	text-decoration: none;
-	color: #0288D1;
-	background-color: #B3E5FC;
+	color: var(--core-d-blue);
+	background-color: var(--core-b-blue);
 }
 
 .essays-insert a, li > a {
 	white-space: normal;
-	color: #424242;
+	color: var(--core-d-black);
 }
 
 .essays-insert a:hover, li > a:hover {
-	color: #03A9F4;
+	color: var(--core-c-blue);
 }
 
 .check-color {
-	color: #2e7d32;
+	color: var(--core-c-green);
 }
 
 .x-color {
-	color: #d84315;
+	color: var(--core-d-red);
 }
 
 .hourglass-color {
-	color: #f9a825;
+	color: var(--core-c-yellow);
 }

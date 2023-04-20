@@ -61,8 +61,8 @@
 }
 
 .hashtags {
-	color: #039BE5;
-	background-color: #E1F5FE;
+	color: var(--core-d-blue);
+	background-color: var(--core-a-blue);
 	margin: 0.5rem 1rem 0.5rem 0rem;
 	padding: 0.3rem 0.5rem 0.3rem 0.5rem;
 	border-radius: 3px;
@@ -71,15 +71,15 @@
 
 .hashtags:hover {
 	text-decoration: none;
-	color: #0288D1;
-	background-color: #B3E5FC;
+	color: var(--core-d-blue);
+	background-color: var(--core-b-blue);
 }
 
 .projects-insert a, li > a {
 	white-space: normal;
-	color: #424242;
+	color: var(--core-d-black);
 }
 
 .projects-insert a:hover, li > a:hover {
-	color: #03A9F4;
+	color: var(--core-c-blue);
 }

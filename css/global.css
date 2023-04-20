@@ -1,3 +1,30 @@
+:root {
+	/*
+	a, b, c, d --> lighter to darker
+	*/
+
+	--core-d-white: #ffffff;
+	--core-c-white: #eeeeee;
+
+	--core-d-black: #424242;
+	--core-c-black: #707070;
+
+	--core-d-blue: #0288D1;
+	--core-c-blue: #03A9F4;
+	--core-b-blue: #B3E5FC;
+	--core-a-blue: #E1F5FE;
+
+	--core-c-yellow: #f9a825;
+	--core-b-yellow: #ffab00;
+	--core-a-yellow: #ffdd4b;
+
+	--core-c-green: #2e7d32;
+	--core-b-green: #4caf50;
+	--core-a-green: #80e27e;
+
+	--core-d-red: #e53935;
+}
+
 body {
 	min-width: 400px !important;
 	font-family: 'Roboto', sans-serif !important;
@@ -16,7 +43,7 @@ a {
 /* navbar section */
 .navbar {
 	box-shadow:0 0px 4px rgba(0, 0, 0, 0.3), 0px 3px 40px rgba(0, 0, 0, 0.1);	
-	background-color: #ffffff;
+	background-color: var(--core-d-white);
 }
 
 .navbar .logo img {
@@ -27,7 +54,7 @@ a {
 }
 
 .navbar .logo .title {
-	color: #424242;
+	color: var(--core-d-black);
 	font-family: 'Roboto', sans-serif;
 	font-size: 2.5rem;
 }
@@ -35,26 +62,26 @@ a {
 .nav-item {
 	font-size: 1.5rem;
 	padding: 0.5rem;
-	color: #424242;
+	color: var(--core-d-black);
 }
 
 a .nav-item:hover {
-	color: #03A9F4;
+	color: var(--core-c-blue);
 }
 
 a .nav-item.selected {
-	color: #03A9F4;
+	color: var(--core-c-blue);
 	cursor: default;
 }
 
 /* header formatting */
 .header-section {
-	background-color: #424242;
+	background-color: var(--core-d-black);
 	width: 100%;
 }
 
 .header-section .title {
-	color: #03A9F4;
+	color: var(--core-c-blue);
 	font-size: 4rem;
 	font-weight: 300;
 	margin-top: 1rem;
@@ -63,52 +90,52 @@ a .nav-item.selected {
 }
 
 .blockquote {
-	color: #ffab00;
+	color: var(--core-b-yellow);
 }
 
 .blockquote-footer {
-	color: #ffdd4b;
+	color: var(--core-a-yellow);
 }
 
 /* footer section */
 footer {
-	color: #707070;
+	color: var(--core-c-black);
 }
 
 footer a {
-	color:  #707070;
+	color:  var(--core-c-black);
 }
 
 footer a:hover {
-	color: #03A9F4;
+	color: var(--core-c-blue);
 }
 
 /* content formatting */
 .content .title-hash {
-	color: #80e27e;
+	color: var(--core-a-green);
 }
 
 .content .title-hash:hover {
-	color: #4caf50;
+	color: var(--core-b-green);
 }
 
 .content title {
-	color: #424242;
+	color: var(--core-d-black);
 }
 
 /* error formatting */
 .error {
-	color: #e53935;
+	color: var(--core-d-red);
 	font-size: 2.5rem;
 	font-weight: 300;
 }
 
 .todo { /* only to mark content that is listed but not yet completed */
-	color: #e53935 !important;
+	color: var(--core-d-red) !important;
 }
 
 .note {
-	background-color: #eeeeee;
+	background-color: var(--core-c-white);
 	border-radius: 3px;
 	margin-bottom: 1rem;
 	padding: 0.5rem;
@@ -126,7 +153,7 @@ footer a:hover {
 }
 
 mark {
-	background-color: #e6ffff;
+	background-color: var(--core-a-blue);
 }
 
 b, strong {
