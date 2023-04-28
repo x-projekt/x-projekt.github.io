@@ -25,7 +25,7 @@
             },
             "card.title": {
                 "text": "C++ Primer (Ed. 5) Solutions",
-                "href": "./projects/cpp-primer.html"
+                "href": "./cpp-primer"
             },
             "card.description": "Solutions to all the exercises in the book <i>Stanley B. Lippman, Jose Lajoie, and Barbara E. Moo. 2012. C++ Primer (5th. ed.). Addison-Wesley Professional</i>. As opposed to merely giving the answers to questions, I've tried to provide an explanation supplemented examples wherever possible.",
             "card.tags": ["c++", "cpp-primer"],
@@ -40,7 +40,7 @@
             },
             "card.title": {
                 "text": "Deep Learning",
-                "href": "_deep-learning"
+                "href": "./_deep-learning"
             },
             "card.description": "This repository contains the mathematical derivations and ground-up implementation  (i.e. without using any pre-built modules) of common deep-learning algorithms. A part of this repository is inspired by the problem-statements from the Deep Learning Specialization, a MOOC by DeepLearning.AI.",
             "card.tags": ["deep-learning", "matrix-calculus", "pytorch"],
@@ -55,7 +55,7 @@
             },
             "card.title": {
                 "text": "Dual Raspberry Pi Stereo Vision",
-                "href": "./projects/dual-raspi-stereo-vision.html"
+                "href": "./dual-raspi-stereo-vision"
             },
             "card.description": "A stereo-vision system composed of two Raspberry Pi's each with an infrared camera module. The images are processed using the OpenCV library while a custom software is used for synchronizing the two cameras.",
             "card.tags": ["python", "computer-vision", "raspberry-pi"],
