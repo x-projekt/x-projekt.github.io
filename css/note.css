@@ -1,0 +1,28 @@
+.note {
+    background-color: var(--core-c-white);
+    border-radius: 3px;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+}
+
+.note.info-icon::before {
+    display: inline-block;
+    content: ' ';
+    background-image: url("https://x-projekt.github.io/img/info-note.svg");
+    background-size: 1.3rem 1.3rem;
+    height: 1.3rem;
+    width: 1.3rem;
+    margin: 0rem 0.25rem 0rem 0rem;
+    vertical-align: -20%;
+}
+
+.note.book-icon::before {
+    display: inline-block;
+    content: ' ';
+    background-image: url("https://x-projekt.github.io/img/book-note.svg");
+    background-size: 1.3rem 1.3rem;
+    height: 1.3rem;
+    width: 1.3rem;
+    margin: 0rem 0.25rem 0rem 0rem;
+    vertical-align: -20%;
+}
