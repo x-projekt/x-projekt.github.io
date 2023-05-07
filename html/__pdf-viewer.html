@@ -1,0 +1,35 @@
+<!-- Step 1: place this snippet of markup right before </html>, i.e. the closing html-tag -->
+<div class="modal fade" id="pdfViewer" tabindex="-1" aria-labelledby="modal-label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-fullscreen">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modal-label">modal-title-here</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid h-100">
+                    <div class="row h-100">
+                        <div class="col-12 h-100">
+                            <div class="d-flex justify-content-center flex-row h-100">
+                                <div id="adobe-dc-view" class="h-100 w-100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Step 2: add the following lines right-after importing jQuery -->
+<script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+<script src="../js/pdf-viewer.js"></script>
+
+<!-- Step 3: rewrite the anchor-tags that link to PDF-files as follows -->
+<a id="modal-anchor" href="./path/to/the/pdf-file.pdf"
+   data-bs-toggle="modal" data-bs-target="#pdfViewer"
+   data-modal-title="Title that must be diplayed on the Modal">
+    <div class="can-be-formatted">
+        link text goes here
+    </div>
+</a>
