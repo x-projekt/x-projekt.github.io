@@ -6,6 +6,21 @@
     "projects": [
         {
             "card.image": {
+                "data": "./img/brain-research.jpg"
+            },
+            "card.title": {
+                "text": "Projekt::Natalie",
+                "href": "./x.projekt.natalie"
+            },
+            "card.description": "An umbrella project supporting many smaller projects geared towards solving Natural Language Understanding. This specific repository, though, contains only the general-ideas and techniques that I've explored/stumbled upon in my pursuit towards answering the question - What does it mean to understand language?",
+            "card.tags": ["nlu-research", "cognitive-science"],
+            "card.date": {
+                "to": "present",
+                "from": "2023-05-07"
+            }
+        },
+        {
+            "card.image": {
                 "data": "./img/svg/natural-language-processing.svg"
             },
             "card.title": {
