@@ -3,6 +3,8 @@
     border-radius: 3px;
     margin-bottom: 1rem;
     padding: 0.5rem;
+
+    font-size: 1.2rem;
 }
 
 .note.info-icon::before {
