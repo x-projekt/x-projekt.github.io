@@ -6,7 +6,7 @@
     "projects": [
         {
             "card.image": {
-                "data": "./img/brain-research.jpg"
+                "data": "./img/brain-research.png"
             },
             "card.title": {
                 "text": "Projekt::Natalie",
