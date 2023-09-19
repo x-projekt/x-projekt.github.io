@@ -25,10 +25,10 @@
             },
             "card.title": {
                 "text": "Natural Language Processing",
-                "href": "./_nlp"
+                "href": "./NLP"
             },
-            "card.description": "This repository contains the implementation of many popular and custom-designed natural language processing algorithms. A part of this repository is inspired by the problem-statements from the Natural Language Processing Specialization, a MOOC by DeepLearning.AI.",
-            "card.tags": ["nlp", "nlu", "computational-linguistics", "pytorch"],
+            "card.description": "This repository hold the work I've done in my pursuit to understanding/interpreting the contemporary NLP-algorithms. This repository involves reproduction and criticism of others' work and my work. A part of this repository is inspired by courses like CS224N (Stanford University), COL772 (IIT Delhi), etc.",
+            "card.tags": ["nlp", "nlu", "ai", "kr&r"],
             "card.date": {
                 "to": "present",
                 "from": "2023-05-16"
@@ -55,10 +55,10 @@
             },
             "card.title": {
                 "text": "Deep Learning",
-                "href": "./_deep-learning"
+                "href": "./DL"
             },
-            "card.description": "This repository contains the mathematical derivations and ground-up implementation  (i.e. without using any pre-built modules) of common deep-learning algorithms. A part of this repository is inspired by the problem-statements from the Deep Learning Specialization, a MOOC by DeepLearning.AI.",
-            "card.tags": ["deep-learning", "matrix-calculus", "pytorch"],
+            "card.description": "This repository holds the work I've done in my pursuit to understanding/interpreting the contemporary DL-algorithms. This repository involves reproduction and criticism of others' work and my work. A part of this repository is inspired by the book <i>I. Goodfellow, Y. Bengio, and A. Courville, Deep Learning. MIT Press, 2016</i>.",
+            "card.tags": ["deep-learning", "matrix-calculus", "optimization"],
             "card.date": {
                 "to": "present",
                 "from": "2023-05-16"
