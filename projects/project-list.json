@@ -27,7 +27,7 @@
                 "text": "Natural Language Processing",
                 "href": "./NLP"
             },
-            "card.description": "This repository hold the work I've done in my pursuit to understanding/interpreting the contemporary NLP-algorithms. This repository involves reproduction and criticism of others' work and my work. A part of this repository is inspired by courses like CS224N (Stanford University), COL772 (IIT Delhi), etc.",
+            "card.description": "This repository hold the work I've done towards interpreting contemporary NLP-algorithms, and identifying their limits. It contains reproduction and criticism of others' work and my work. <br>Acknowledgements: <b>CS224N (Stanford University)</b>, <b>COL772 (IIT Delhi)</b>",
             "card.tags": ["nlp", "nlu", "ai", "kr&r"],
             "card.date": {
                 "to": "present",
