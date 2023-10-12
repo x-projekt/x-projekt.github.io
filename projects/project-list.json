@@ -27,7 +27,7 @@
                 "text": "Natural Language Processing",
                 "href": "./NLP"
             },
-            "card.description": "This repository hold the work I've done in my pursuit to understanding/interpreting the contemporary NLP-algorithms. This repository involves reproduction and criticism of others' work and my work. A part of this repository is inspired by courses like CS224N (Stanford University), COL772 (IIT Delhi), etc.",
+            "card.description": "This repository hold the work I've done towards interpreting contemporary NLP-algorithms, and identifying their limits. It contains reproduction and criticism of others' work and my work. A part of the content here is inspired by the courses CS224N (Stanford University), and COL772 (IIT Delhi).",
             "card.tags": ["nlp", "nlu", "ai", "kr&r"],
             "card.date": {
                 "to": "present",
@@ -57,7 +57,7 @@
                 "text": "Deep Learning",
                 "href": "./DL"
             },
-            "card.description": "This repository holds the work I've done in my pursuit to understanding/interpreting the contemporary DL-algorithms. This repository involves reproduction and criticism of others' work and my work. A part of this repository is inspired by the book <i>I. Goodfellow, Y. Bengio, and A. Courville, Deep Learning. MIT Press, 2016</i>.",
+            "card.description": "This repository holds the work I've done towards understanding contemporary Deep Learning techniques. This repository involves reproduction and criticism of others' work and my work. A part of this repository is inspired by the book <i>I. Goodfellow, Y. Bengio, and A. Courville, Deep Learning. MIT Press, 2016</i>.",
             "card.tags": ["deep-learning", "matrix-calculus", "optimization"],
             "card.date": {
                 "to": "present",
